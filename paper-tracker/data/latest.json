@@ -1,7 +1,89 @@
 {
-  "run_utc": null,
-  "report_path": null,
-  "summary": "还没有成功运行。第一次 GitHub Actions 完成后，这里会显示最新摘要。",
-  "items": [],
-  "caveats": []
+  "run_utc": "2026-06-17T00:00:00Z",
+  "report_path": "paper-tracker/reports/2026-06-17.md",
+  "summary": "本轮找到 6 篇高相关新增工作，重点集中在触觉反应式灵巧操作、开放式 dexterity 平台、跨形态 token 化表示和灵巧手控制；未发现需要重复报告的旧条目。",
+  "items": [
+    {
+      "id": "arxiv:2606.17055",
+      "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
+      "first_public_date": "2026-06-15",
+      "authors_or_org": "Dantong Niu 等",
+      "type": "paper",
+      "relevance": "直接围绕触觉反应式灵巧操作，强调触觉模态、VLA 架构和 12 个需要精细力控/可变形物体操作的任务。",
+      "novelty_signal": "100 小时触觉丰富数据集、变量速率 MoT 架构、时序 tactile VQ-VAE 编码器，且有明显的实机任务提升。",
+      "links": [
+        "https://arxiv.org/abs/2606.17055"
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "arxiv:2606.14561",
+      "title": "ORCA: A Platform for Open-Source Dexterity Research",
+      "first_public_date": "2026-06-12",
+      "authors_or_org": "Francesco Capuano 等",
+      "type": "project",
+      "relevance": "把灵巧手研究作为一等公民来做，核心是开放式软硬件研究栈、遥操作、仿真、retargeting 和与机器人学习框架的集成。",
+      "novelty_signal": "平台级发布，明确开源整套 dexterity stack，并展示了手内重定向任务的端到端流程。",
+      "links": [
+        "https://arxiv.org/abs/2606.14561"
+      ],
+      "confidence": 0.95
+    },
+    {
+      "id": "arxiv:2606.13601",
+      "title": "MCR-Bionic Hand: Anatomical Structural Priors for Dexterous Manipulation",
+      "first_public_date": "2026-06-11",
+      "authors_or_org": "Haosen Yang, Guowu Wei",
+      "type": "paper",
+      "relevance": "以 1:1 仿生肌骨手为中心，讨论骨骼、韧带、肌腱和拮抗/协同结构如何帮助灵巧操作。",
+      "novelty_signal": "提出“结构先验”与后接触调节机制，并给出 coin rotation、pen transfer、cube manipulation 等实机演示。",
+      "links": [
+        "https://arxiv.org/abs/2606.13601"
+      ],
+      "confidence": 0.93
+    },
+    {
+      "id": "arxiv:2606.10683",
+      "title": "UniDexTok: A Unified Dexterous Hand Tokenizer from Real Data",
+      "first_public_date": "2026-06-09",
+      "authors_or_org": "Dong Fang 等",
+      "type": "dataset",
+      "relevance": "解决多种灵巧手形态不统一的问题，提出统一的 22-DoF 语义接口和 tokenizer，直接面向异构灵巧手数据表示。",
+      "novelty_signal": "跨实体、免 retargeting 的状态 token 化，并展示极低重建误差和新手型的 zero-shot/few-shot 能力。",
+      "links": [
+        "https://arxiv.org/abs/2606.10683"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "id": "arxiv:2606.12109",
+      "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
+      "first_public_date": "2026-06-10",
+      "authors_or_org": "Chuanke Pang 等",
+      "type": "paper",
+      "relevance": "明确把高 DoF 灵巧手作为适配对象，核心问题是把原本面向平行夹爪的 VLA 迁移到多指手。",
+      "novelty_signal": "提出 InDex，两阶段解耦学习，把平行夹爪输出重用为 grasp intent，再用 intent-conditioned diffusion head 解码细粒度关节动作。",
+      "links": [
+        "https://arxiv.org/abs/2606.12109"
+      ],
+      "confidence": 0.9
+    },
+    {
+      "id": "arxiv:2606.14606",
+      "title": "Impedance MPC with Disturbance Estimation for Dexterous Hand Control",
+      "first_public_date": "2026-06-12",
+      "authors_or_org": "Yongyan Cao",
+      "type": "paper",
+      "relevance": "聚焦灵巧手/手指低层控制，强调接触力、约束和扰动估计，而不是泛化的机械臂控制。",
+      "novelty_signal": "把 impedance MPC、扰动估计和高频 QP 控制结合到灵巧手指控制里，并在物理 finger 平台上验证。",
+      "links": [
+        "https://arxiv.org/abs/2606.14606"
+      ],
+      "confidence": 0.88
+    }
+  ],
+  "caveats": [
+    "本轮以 arXiv 预印本为主，部分条目后续可能更新为期刊/会议版本。",
+    "由于仓库尚无历史成功运行，本轮采用配置中的回看窗口作为首次去重基线。"
+  ]
 }

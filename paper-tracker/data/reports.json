@@ -1,3 +1,10 @@
 {
-  "reports": []
+  "reports": [
+    {
+      "date": "2026-06-17",
+      "path": "paper-tracker/reports/2026-06-17.md",
+      "summary": "本轮找到 6 篇高相关新增工作，重点集中在触觉反应式灵巧操作、开放式 dexterity 平台、跨形态 token 化表示和灵巧手控制；未发现需要重复报告的旧条目。",
+      "item_count": 6
+    }
+  ]
 }
