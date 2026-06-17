@@ -1,0 +1,47 @@
+{
+  "topic_name": "Dexterous Robotic Hands",
+  "language": "zh-CN",
+  "timezone": "America/Los_Angeles",
+  "keywords": [
+    "dexterous robotic hand",
+    "dexterous manipulation",
+    "multi-finger robotic hand",
+    "anthropomorphic robot hand",
+    "hand teleoperation",
+    "tactile sensing robot hand",
+    "dexterous grasping",
+    "in-hand manipulation",
+    "bimanual dexterous manipulation",
+    "robot hand sim-to-real"
+  ],
+  "sources": [
+    "arXiv",
+    "conference and journal websites",
+    "lab and university pages",
+    "company research blogs",
+    "GitHub repositories",
+    "project pages",
+    "Hugging Face pages"
+  ],
+  "include_criteria": [
+    "Dexterous robot hands or dexterous manipulation are a central contribution.",
+    "Prefer work with physical robot-hand experiments.",
+    "Prefer open-source code, project pages with videos, datasets, benchmarks, tactile sensing, teleoperation, and sim-to-real transfer.",
+    "Major updates to previously seen work may be included if they add code, data, benchmarks, project pages, substantial paper revisions, or notable acceptance news."
+  ],
+  "exclude_criteria": [
+    "Generic grasping with only parallel grippers.",
+    "Generic robot manipulation where hands are not central.",
+    "Human-hand tracking without robot-hand relevance.",
+    "Reposts and duplicate announcements."
+  ],
+  "ranking_preferences": [
+    "Strong physical dexterous-hand experiments",
+    "Code release",
+    "Benchmark or dataset contribution",
+    "Bimanual dexterous manipulation with hands as a central component",
+    "Tactile sensing or hand teleoperation"
+  ],
+  "lookback_days_if_state_missing": 14,
+  "max_items_per_run": 12
+}

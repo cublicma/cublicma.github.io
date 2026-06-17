@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>论文追踪 | Dexterous Robotic Hands</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="./">Paper Tracker</a>
+      <nav class="navlinks" aria-label="主要链接">
+        <a href="https://github.com/cublicma/cublicma.github.io/edit/master/paper-tracker/config.json">编辑配置</a>
+        <a href="https://github.com/cublicma/cublicma.github.io/actions/workflows/daily-paper-refresh.yml">手动运行</a>
+        <a href="https://github.com/cublicma/cublicma.github.io/tree/master/paper-tracker/reports">报告源码</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">自动论文雷达</p>
+          <h1>Dexterous Robotic Hands</h1>
+          <p class="lede">每天搜索、去重并汇总灵巧手、触觉、遥操作和手内操作相关的新论文与项目。</p>
+        </div>
+        <div class="status-panel" aria-live="polite">
+          <span class="label">最近运行</span>
+          <strong id="run-time">读取中</strong>
+          <span id="item-count">--</span>
+        </div>
+      </section>
+
+      <section class="summary-grid">
+        <article class="panel latest">
+          <div class="section-head">
+            <h2>最新摘要</h2>
+            <a id="latest-report-link" href="#">打开 Markdown</a>
+          </div>
+          <p id="latest-summary">正在读取最新结果...</p>
+          <div id="caveats" class="caveats"></div>
+        </article>
+
+        <article class="panel config">
+          <div class="section-head">
+            <h2>搜索配置</h2>
+            <a href="https://github.com/cublicma/cublicma.github.io/edit/master/paper-tracker/config.json">修改</a>
+          </div>
+          <dl id="config-list"></dl>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>本次发现</h2>
+          <span id="items-label">等待数据</span>
+        </div>
+        <div id="items" class="items"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2>历史报告</h2>
+          <span id="reports-label">--</span>
+        </div>
+        <div id="reports" class="reports"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
