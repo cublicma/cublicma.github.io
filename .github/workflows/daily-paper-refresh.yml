@@ -39,7 +39,7 @@ jobs:
           prompt-file: .github/codex/prompts/paper-tracker.md
           output-file: codex-output.md
           sandbox: workspace-write
-          codex-args: '["--config","web_search=\"live\"","--ask-for-approval","never","--ephemeral"]'
+          codex-args: '["--config","web_search=\"live\""]'
           model: gpt-5.4
           effort: medium
 
