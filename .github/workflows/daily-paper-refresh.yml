@@ -22,6 +22,15 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Verify OpenAI API key secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "OPENAI_API_KEY is not set. Add it in Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+
       - name: Run Codex research refresh
         id: codex
         uses: openai/codex-action@v1
