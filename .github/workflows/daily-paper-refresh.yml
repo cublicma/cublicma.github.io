@@ -40,8 +40,8 @@ jobs:
           output-file: codex-output.md
           sandbox: workspace-write
           codex-args: '["--config","web_search=\"live\""]'
-          model: gpt-5.4
-          effort: medium
+          model: gpt-5.4-mini
+          effort: low
 
       - name: Show Codex final message
         if: always()
