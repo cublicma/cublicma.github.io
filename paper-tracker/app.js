@@ -10,6 +10,9 @@ const text = {
 };
 
 let currentConfig = null;
+let speechSegments = [];
+let speechIndex = 0;
+let speechPaused = false;
 
 async function readJson(path) {
   const response = await fetch(path, { cache: "no-store" });
@@ -55,6 +58,15 @@ function sourceLabel(url) {
   } catch {
     return "来源";
   }
+}
+
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
 }
 
 function lines(value) {
@@ -166,6 +178,144 @@ function renderConfig(config) {
   `).join("");
 }
 
+function analysisText(item) {
+  if (item.analysis_zh) return item.analysis_zh;
+  return `主要工作与相关性：${item.relevance || text.unavailable} 新颖性：${item.novelty_signal || text.unavailable} 完整的方法、实验、结果与限制分析将在下一次自动更新后生成。`;
+}
+
+function languageFor(value, selectedLanguage) {
+  if (selectedLanguage !== "auto") return selectedLanguage;
+  const chineseCharacters = (value.match(/[\u3400-\u9fff]/g) || []).length;
+  const latinWords = (value.match(/[A-Za-z][A-Za-z0-9.-]*/g) || []).length;
+  return chineseCharacters >= latinWords * 2 ? "zh-CN" : "en-US";
+}
+
+function splitForSpeech(value, maxLength = 180) {
+  const sentences = String(value || "").match(/[^。！？.!?]+[。！？.!?]?/g) || [];
+  const chunks = [];
+  let current = "";
+
+  sentences.forEach(sentence => {
+    const next = `${current}${sentence}`.trim();
+    if (current && next.length > maxLength) {
+      chunks.push(current.trim());
+      current = sentence;
+    } else {
+      current = next;
+    }
+  });
+
+  if (current.trim()) chunks.push(current.trim());
+  return chunks;
+}
+
+function preferredVoice(language) {
+  const voices = window.speechSynthesis.getVoices();
+  const prefix = language.toLowerCase().split("-")[0];
+  return voices.find(voice => voice.lang.toLowerCase() === language.toLowerCase())
+    || voices.find(voice => voice.lang.toLowerCase().startsWith(prefix))
+    || null;
+}
+
+function setSpeechStatus(value) {
+  setText("speech-status", value);
+}
+
+function highlightSpeakingItem(itemIndex) {
+  document.querySelectorAll(".analysis-entry").forEach((node, index) => {
+    node.classList.toggle("is-speaking", index === itemIndex);
+  });
+}
+
+function stopSpeech(status = "已停止") {
+  if (!("speechSynthesis" in window)) return;
+  window.speechSynthesis.cancel();
+  speechIndex = 0;
+  speechPaused = false;
+  highlightSpeakingItem(-1);
+  setSpeechStatus(status);
+  const pauseButton = document.getElementById("speech-pause");
+  const stopButton = document.getElementById("speech-stop");
+  if (pauseButton) {
+    pauseButton.disabled = true;
+    pauseButton.textContent = "Ⅱ";
+    pauseButton.setAttribute("aria-label", "暂停");
+    pauseButton.title = "暂停";
+  }
+  if (stopButton) stopButton.disabled = true;
+}
+
+function speakNext() {
+  if (speechIndex >= speechSegments.length) {
+    stopSpeech("播放完成");
+    return;
+  }
+
+  const segment = speechSegments[speechIndex];
+  const languageSelect = document.getElementById("speech-language");
+  const rateSelect = document.getElementById("speech-rate");
+  const language = languageFor(segment.text, languageSelect?.value || "auto");
+  const utterance = new SpeechSynthesisUtterance(segment.text);
+  utterance.lang = language;
+  utterance.rate = Number(rateSelect?.value || 1);
+  utterance.voice = preferredVoice(language);
+  utterance.onstart = () => {
+    highlightSpeakingItem(segment.itemIndex);
+    setSpeechStatus(`正在播放 ${segment.itemIndex + 1}/${segment.itemCount}`);
+  };
+  utterance.onend = () => {
+    speechIndex += 1;
+    speakNext();
+  };
+  utterance.onerror = event => {
+    if (event.error === "canceled" || event.error === "interrupted") return;
+    speechIndex += 1;
+    speakNext();
+  };
+  window.speechSynthesis.speak(utterance);
+}
+
+function setupSpeechPlayer() {
+  const playButton = document.getElementById("speech-play");
+  const pauseButton = document.getElementById("speech-pause");
+  const stopButton = document.getElementById("speech-stop");
+  if (!playButton || !pauseButton || !stopButton) return;
+
+  if (!("speechSynthesis" in window)) {
+    setSpeechStatus("浏览器不支持朗读");
+    return;
+  }
+
+  playButton.addEventListener("click", () => {
+    stopSpeech("准备播放");
+    speechIndex = 0;
+    pauseButton.disabled = false;
+    stopButton.disabled = false;
+    speakNext();
+  });
+
+  pauseButton.addEventListener("click", () => {
+    if (speechPaused) {
+      window.speechSynthesis.resume();
+      speechPaused = false;
+      pauseButton.textContent = "Ⅱ";
+      pauseButton.setAttribute("aria-label", "暂停");
+      pauseButton.title = "暂停";
+      setSpeechStatus("继续播放");
+    } else {
+      window.speechSynthesis.pause();
+      speechPaused = true;
+      pauseButton.textContent = "▶";
+      pauseButton.setAttribute("aria-label", "继续");
+      pauseButton.title = "继续";
+      setSpeechStatus("已暂停");
+    }
+  });
+
+  stopButton.addEventListener("click", () => stopSpeech());
+  window.addEventListener("beforeunload", () => window.speechSynthesis.cancel());
+}
+
 function renderLatest(latest) {
   setText("run-time", formatDate(latest.run_utc));
   setText("item-count", `${(latest.items || []).length} 个条目`);
@@ -183,6 +333,43 @@ function renderLatest(latest) {
       `<div class="caveat">${item}</div>`
     )).join("");
   }
+
+  const analysis = document.getElementById("daily-analysis");
+  const playButton = document.getElementById("speech-play");
+  const pauseButton = document.getElementById("speech-pause");
+  const stopButton = document.getElementById("speech-stop");
+  const latestItems = latest.items || [];
+
+  speechSegments = latestItems.flatMap((item, index) => {
+    const common = { itemIndex: index, itemCount: latestItems.length };
+    return [
+      { text: `第 ${index + 1} 篇。`, ...common },
+      { text: item.title || "未命名文章", ...common },
+      ...splitForSpeech(analysisText(item)).map(segment => ({ text: segment, ...common }))
+    ];
+  });
+
+  if (analysis) {
+    if (latestItems.length === 0) {
+      analysis.innerHTML = `<p class="empty analysis-empty">今天还没有可供精读的文章。</p>`;
+    } else {
+      analysis.innerHTML = latestItems.map((item, index) => `
+        <article class="analysis-entry">
+          <span class="analysis-index">${index + 1}</span>
+          <div>
+            <h3>${escapeHtml(item.title || text.unavailable)}</h3>
+            <p>${escapeHtml(analysisText(item))}</p>
+          </div>
+        </article>
+      `).join("");
+    }
+  }
+
+  const speechReady = speechSegments.length > 0 && "speechSynthesis" in window;
+  if (playButton) playButton.disabled = !speechReady;
+  if (pauseButton) pauseButton.disabled = true;
+  if (stopButton) stopButton.disabled = true;
+  setSpeechStatus(speechReady ? `${latestItems.length} 篇可播放` : "暂无可播放内容");
 
   const items = document.getElementById("items");
   if (!items) return;
@@ -255,4 +442,5 @@ async function main() {
 }
 
 setupConfigEditor();
+setupSpeechPlayer();
 main();
