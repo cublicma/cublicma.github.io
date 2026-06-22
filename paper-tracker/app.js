@@ -36,14 +36,33 @@ function setText(id, value) {
   if (node) node.textContent = value;
 }
 
+function configValue(value) {
+  if (!Array.isArray(value)) return value || text.unavailable;
+  if (value.length === 0) return text.unavailable;
+  return `<ul class="config-values">${value.map(item => `<li>${item}</li>`).join("")}</ul>`;
+}
+
+function sourceLabel(url) {
+  try {
+    const hostname = new URL(url).hostname.replace(/^www\./, "");
+    if (hostname === "arxiv.org") return "arXiv";
+    if (hostname === "github.com") return "GitHub";
+    if (hostname === "huggingface.co") return "Hugging Face";
+    if (hostname === "doi.org") return "DOI";
+    return hostname;
+  } catch {
+    return "来源";
+  }
+}
+
 function renderConfig(config) {
   const list = document.getElementById("config-list");
   if (!list) return;
 
   const rows = [
     ["主题", config.topic_name],
-    ["关键词", (config.keywords || []).join(" / ")],
-    ["来源", (config.sources || []).join(" / ")],
+    ["关键词", config.keywords || []],
+    ["来源", config.sources || []],
     ["最多条目", config.max_items_per_run],
     ["无状态回看", `${config.lookback_days_if_state_missing || 14} 天`]
   ];
@@ -51,7 +70,7 @@ function renderConfig(config) {
   list.innerHTML = rows.map(([key, value]) => `
     <div>
       <dt>${key}</dt>
-      <dd>${value || text.unavailable}</dd>
+      <dd>${configValue(value)}</dd>
     </div>
   `).join("");
 }
@@ -95,7 +114,7 @@ function renderLatest(latest) {
       <p><strong>新颖信号：</strong>${item.novelty_signal || text.unavailable}</p>
       <div class="links">
         ${(item.links || []).map((url, index) => (
-          `<a href="${url}" rel="noreferrer" target="_blank">来源 ${index + 1}</a>`
+          `<a href="${url}" rel="noreferrer" target="_blank">${sourceLabel(url)}</a>`
         )).join("")}
       </div>
     </article>
