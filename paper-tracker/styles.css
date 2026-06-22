@@ -32,18 +32,21 @@ a:hover {
   text-decoration: underline;
 }
 
-.topbar {
+.site-header {
   position: sticky;
   top: 0;
   z-index: 3;
+  border-bottom: 1px solid var(--line);
+  background: rgba(246, 246, 241, 0.96);
+  backdrop-filter: blur(14px);
+}
+
+.topbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 16px clamp(18px, 5vw, 56px);
-  border-bottom: 1px solid var(--line);
-  background: rgba(246, 246, 241, 0.92);
-  backdrop-filter: blur(14px);
+  padding: 14px clamp(18px, 5vw, 56px) 10px;
 }
 
 .brand {
@@ -58,6 +61,43 @@ a:hover {
   font-size: 14px;
 }
 
+.topicbar {
+  display: flex;
+  gap: 4px;
+  padding: 0 clamp(18px, 5vw, 56px);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.topicbar::-webkit-scrollbar {
+  display: none;
+}
+
+.topic-link {
+  flex: 0 0 auto;
+  padding: 10px 12px 11px;
+  border-bottom: 2px solid transparent;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.topic-link:hover {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.topic-link.is-active {
+  border-bottom-color: var(--accent);
+  color: var(--ink);
+}
+
+.topic-link.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.46;
+}
+
 main {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
@@ -68,17 +108,8 @@ main {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 280px;
   gap: 28px;
-  align-items: end;
-  padding: 26px 0 34px;
-}
-
-.eyebrow {
-  margin: 0 0 10px;
-  color: var(--warm);
-  font-size: 13px;
-  font-weight: 750;
-  letter-spacing: 0;
-  text-transform: uppercase;
+  align-items: center;
+  padding: 30px 0;
 }
 
 h1,
@@ -89,7 +120,7 @@ p {
 
 h1 {
   max-width: 860px;
-  margin-bottom: 14px;
+  margin-bottom: 0;
   font-size: clamp(40px, 8vw, 86px);
   line-height: 0.98;
   letter-spacing: 0;
@@ -98,14 +129,6 @@ h1 {
 h2 {
   margin-bottom: 0;
   font-size: 20px;
-}
-
-.lede {
-  max-width: 720px;
-  margin-bottom: 0;
-  color: var(--muted);
-  font-size: 18px;
-  line-height: 1.65;
 }
 
 .status-panel,
@@ -180,7 +203,7 @@ h2 {
 
 dl {
   display: grid;
-  gap: 12px;
+  gap: 16px;
   margin: 0;
 }
 
@@ -192,6 +215,32 @@ dt {
 dd {
   margin: 4px 0 0;
   line-height: 1.5;
+}
+
+.config-values {
+  display: grid;
+  gap: 6px;
+  margin: 7px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.config-values li {
+  position: relative;
+  padding-left: 14px;
+  color: #303735;
+  line-height: 1.45;
+}
+
+.config-values li::before {
+  position: absolute;
+  top: 0.65em;
+  left: 1px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  content: "";
 }
 
 .items {
@@ -273,6 +322,11 @@ dd {
   .topbar {
     align-items: flex-start;
     flex-direction: column;
+    gap: 10px;
+  }
+
+  .navlinks {
+    gap: 10px 14px;
   }
 
   .hero,
