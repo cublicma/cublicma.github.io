@@ -23,6 +23,12 @@ body {
   color: var(--ink);
 }
 
+button,
+input,
+textarea {
+  font: inherit;
+}
+
 a {
   color: var(--accent-strong);
   text-decoration: none;
@@ -59,6 +65,18 @@ a:hover {
   flex-wrap: wrap;
   gap: 14px;
   font-size: 14px;
+}
+
+.text-button {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent-strong);
+  cursor: pointer;
+}
+
+.text-button:hover {
+  text-decoration: underline;
 }
 
 .topicbar {
@@ -318,6 +336,176 @@ dd {
   line-height: 1.6;
 }
 
+dialog {
+  width: min(680px, calc(100% - 28px));
+  max-height: calc(100vh - 40px);
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  box-shadow: 0 24px 70px rgba(24, 27, 26, 0.22);
+}
+
+dialog::backdrop {
+  background: rgba(24, 27, 26, 0.44);
+  backdrop-filter: blur(3px);
+}
+
+#config-form {
+  padding: 22px;
+}
+
+.dialog-head,
+.dialog-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.dialog-head {
+  margin-bottom: 22px;
+}
+
+.dialog-head h2 {
+  margin-top: 3px;
+  font-size: 24px;
+}
+
+.dialog-kicker {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.icon-button {
+  display: grid;
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.field {
+  display: grid;
+  gap: 7px;
+  min-width: 0;
+}
+
+.field-wide {
+  grid-column: 1 / -1;
+}
+
+.field > span {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.field small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.field textarea,
+.field input {
+  width: 100%;
+  border: 1px solid #c8cfca;
+  border-radius: 6px;
+  outline: 0;
+  background: #fbfcfb;
+  color: var(--ink);
+}
+
+.field textarea {
+  min-height: 96px;
+  padding: 10px 11px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.field input {
+  height: 42px;
+  padding: 0 11px;
+}
+
+.field textarea:focus,
+.field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--soft);
+}
+
+.advanced-fields {
+  margin-top: 18px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.advanced-fields summary {
+  padding: 14px 2px;
+  cursor: pointer;
+  color: var(--accent-strong);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.advanced-grid {
+  padding: 2px 0 18px;
+}
+
+.dialog-actions {
+  margin-top: 20px;
+}
+
+.dialog-actions > span {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.dialog-actions > div {
+  display: flex;
+  gap: 8px;
+}
+
+.primary-button,
+.secondary-button {
+  min-height: 40px;
+  padding: 0 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.primary-button {
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+.primary-button:hover {
+  background: var(--accent-strong);
+}
+
+.secondary-button {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+}
+
 @media (max-width: 760px) {
   .topbar {
     align-items: flex-start;
@@ -340,5 +528,23 @@ dd {
 
   .report-row {
     grid-template-columns: 1fr;
+  }
+
+  #config-form {
+    padding: 18px;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dialog-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .dialog-actions > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
