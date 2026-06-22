@@ -11,7 +11,7 @@
       <div class="topbar">
         <a class="brand" href="./">Paper Tracker</a>
         <nav class="navlinks" aria-label="站点工具">
-          <a href="https://github.com/cublicma/cublicma.github.io/edit/master/paper-tracker/config.json">编辑配置</a>
+          <button class="text-button" type="button" data-open-config>编辑配置</button>
           <a href="https://github.com/cublicma/cublicma.github.io/actions/workflows/daily-paper-refresh.yml">手动运行</a>
           <a href="https://github.com/cublicma/cublicma.github.io/tree/master/paper-tracker/reports">报告源码</a>
         </nav>
@@ -49,7 +49,7 @@
         <article class="panel config">
           <div class="section-head">
             <h2>搜索配置</h2>
-            <a href="https://github.com/cublicma/cublicma.github.io/edit/master/paper-tracker/config.json">修改</a>
+            <button class="text-button" type="button" data-open-config>修改</button>
           </div>
           <dl id="config-list"></dl>
         </article>
@@ -71,6 +71,68 @@
         <div id="reports" class="reports"></div>
       </section>
     </main>
+
+    <dialog id="config-editor" aria-labelledby="config-editor-title">
+      <form id="config-form" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <span class="dialog-kicker">Dex Manipulation</span>
+            <h2 id="config-editor-title">编辑搜索配置</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-config aria-label="关闭">&times;</button>
+        </div>
+
+        <div class="form-grid">
+          <label class="field field-wide">
+            <span>关键词</span>
+            <textarea id="config-keywords" rows="8" required spellcheck="false"></textarea>
+            <small>每行一个关键词</small>
+          </label>
+
+          <label class="field field-wide">
+            <span>搜索来源</span>
+            <textarea id="config-sources" rows="6" required spellcheck="false"></textarea>
+            <small>每行一个来源</small>
+          </label>
+
+          <label class="field">
+            <span>回看天数</span>
+            <input id="config-lookback" type="number" min="1" max="365" required>
+          </label>
+
+          <label class="field">
+            <span>每次最多条目</span>
+            <input id="config-max-items" type="number" min="1" max="50" required>
+          </label>
+        </div>
+
+        <details class="advanced-fields">
+          <summary>高级范围</summary>
+          <div class="form-grid advanced-grid">
+            <label class="field field-wide">
+              <span>收录条件</span>
+              <textarea id="config-include" rows="5" spellcheck="false"></textarea>
+            </label>
+            <label class="field field-wide">
+              <span>排除条件</span>
+              <textarea id="config-exclude" rows="4" spellcheck="false"></textarea>
+            </label>
+            <label class="field field-wide">
+              <span>排序偏好</span>
+              <textarea id="config-ranking" rows="4" spellcheck="false"></textarea>
+            </label>
+          </div>
+        </details>
+
+        <div class="dialog-actions">
+          <span id="config-submit-status">仅接受 cublicma 提交的请求</span>
+          <div>
+            <button class="secondary-button" type="button" data-close-config>取消</button>
+            <button class="primary-button" type="submit">提交审批</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
 
     <script src="app.js"></script>
   </body>

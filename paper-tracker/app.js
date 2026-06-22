@@ -9,6 +9,8 @@ const text = {
   loadFailed: "数据读取失败。请稍后刷新，或查看 GitHub Actions 运行记录。"
 };
 
+let currentConfig = null;
+
 async function readJson(path) {
   const response = await fetch(path, { cache: "no-store" });
   if (!response.ok) {
@@ -53,6 +55,95 @@ function sourceLabel(url) {
   } catch {
     return "来源";
   }
+}
+
+function lines(value) {
+  return (value || [])
+    .map(item => String(item).trim())
+    .filter(Boolean);
+}
+
+function textareaLines(id) {
+  const node = document.getElementById(id);
+  return lines(node ? node.value.split("\n") : []);
+}
+
+function setInputValue(id, value) {
+  const node = document.getElementById(id);
+  if (node) node.value = value ?? "";
+}
+
+function populateConfigForm(config) {
+  setInputValue("config-keywords", (config.keywords || []).join("\n"));
+  setInputValue("config-sources", (config.sources || []).join("\n"));
+  setInputValue("config-lookback", config.lookback_days_if_state_missing || 14);
+  setInputValue("config-max-items", config.max_items_per_run || 12);
+  setInputValue("config-include", (config.include_criteria || []).join("\n"));
+  setInputValue("config-exclude", (config.exclude_criteria || []).join("\n"));
+  setInputValue("config-ranking", (config.ranking_preferences || []).join("\n"));
+}
+
+function requestedConfig() {
+  return {
+    ...currentConfig,
+    keywords: textareaLines("config-keywords"),
+    sources: textareaLines("config-sources"),
+    include_criteria: textareaLines("config-include"),
+    exclude_criteria: textareaLines("config-exclude"),
+    ranking_preferences: textareaLines("config-ranking"),
+    lookback_days_if_state_missing: Number(document.getElementById("config-lookback").value),
+    max_items_per_run: Number(document.getElementById("config-max-items").value)
+  };
+}
+
+function openConfigRequest(config) {
+  const markerStart = "<!-- paper-tracker-config:start -->";
+  const markerEnd = "<!-- paper-tracker-config:end -->";
+  const body = [
+    "## Paper Tracker 配置修改",
+    "",
+    markerStart,
+    "```json",
+    JSON.stringify(config, null, 2),
+    "```",
+    markerEnd,
+    "",
+    "提交后，自动化会验证提交者并创建一个等待审核的 Pull Request。"
+  ].join("\n");
+  const issueUrl = new URL("https://github.com/cublicma/cublicma.github.io/issues/new");
+  issueUrl.searchParams.set("title", `[Paper Tracker Config] ${new Date().toISOString().slice(0, 10)}`);
+  issueUrl.searchParams.set("body", body);
+  window.open(issueUrl.toString(), "_blank", "noopener,noreferrer");
+}
+
+function setupConfigEditor() {
+  const dialog = document.getElementById("config-editor");
+  const form = document.getElementById("config-form");
+  if (!dialog || !form) return;
+
+  document.querySelectorAll("[data-open-config]").forEach(button => {
+    button.addEventListener("click", () => {
+      if (!currentConfig) return;
+      populateConfigForm(currentConfig);
+      dialog.showModal();
+    });
+  });
+
+  document.querySelectorAll("[data-close-config]").forEach(button => {
+    button.addEventListener("click", () => dialog.close());
+  });
+
+  dialog.addEventListener("click", event => {
+    if (event.target === dialog) dialog.close();
+  });
+
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    const config = requestedConfig();
+    if (config.keywords.length === 0 || config.sources.length === 0) return;
+    openConfigRequest(config);
+    dialog.close();
+  });
 }
 
 function renderConfig(config) {
@@ -149,6 +240,7 @@ async function main() {
       readJson(paths.latest),
       readJson(paths.reports)
     ]);
+    currentConfig = config;
     renderConfig(config);
     renderLatest(latest);
     renderReports(reports);
@@ -162,4 +254,5 @@ async function main() {
   }
 }
 
+setupConfigEditor();
 main();

@@ -1,0 +1,53 @@
+name: Apply Paper Tracker Config
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  create-config-pr:
+    if: >-
+      github.event.issue.user.login == 'cublicma' &&
+      startsWith(github.event.issue.title, '[Paper Tracker Config]')
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v5
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Validate and apply request
+        run: node scripts/apply-config-request.mjs
+
+      - name: Commit configuration branch
+        env:
+          BRANCH: config/paper-tracker-${{ github.event.issue.number }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$BRANCH"
+          git add paper-tracker/config.json
+          git commit -m "Update paper tracker configuration"
+          git push origin "$BRANCH"
+
+      - name: Create approval pull request
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: config/paper-tracker-${{ github.event.issue.number }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          pr_url="$(gh pr create \
+            --base master \
+            --head "$BRANCH" \
+            --title "Update paper tracker configuration" \
+            --body "Configuration request from #$ISSUE_NUMBER. Closes #$ISSUE_NUMBER." \
+            --assignee cublicma \
+            --reviewer cublicma)"
+          gh issue comment "$ISSUE_NUMBER" --body "Configuration validated. Review the pull request: $pr_url"
