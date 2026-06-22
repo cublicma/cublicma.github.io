@@ -1,10 +1,51 @@
 {
-  "run_utc": "2026-06-17T18:21:55Z",
-  "report_path": "paper-tracker/reports/2026-06-17.md",
-  "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧手/灵巧操作工作；为避免重复和误报，本次不新增条目。",
-  "items": [],
+  "run_utc": "2026-06-22T20:15:53Z",
+  "report_path": "paper-tracker/reports/2026-06-22.md",
+  "summary": "本轮发现 3 项与灵巧机器人手直接相关的新进展，覆盖新硬件、数据/代码套件和低成本灵巧手内操作方案。",
+  "items": [
+    {
+      "id": "arxiv:2606.20549",
+      "title": "Generating Robot Hands from Human Demonstrations",
+      "first_public_date": "2026-06-18",
+      "authors_or_org": "Sha Yi, Nicklas Hansen, Xueqian Bai, Carmelo Sferrazza, Michael T. Tolley, Xiaolong Wang",
+      "type": "paper",
+      "relevance": "以“生成机器人手”为中心，直接面向灵巧手的物理形态设计与控制，且包含真实手部实验和可制造结构。",
+      "novelty_signal": "用超过 400 万帧人类指尖运动驱动机器人手设计搜索，并制造出 6 DoF 与任务特定手型，体现出明确的新硬件与实机验证。",
+      "links": [
+        "https://arxiv.org/abs/2606.20549"
+      ],
+      "confidence": 0.98
+    },
+    {
+      "id": "arxiv:2603.22264",
+      "title": "UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos",
+      "first_public_date": "2026-03-23",
+      "authors_or_org": "Gu Zhang, Qicheng Xu, Haozhe Zhang, Jianhan Ma, Long He, Yiming Bao, Zeyu Ping, Zhecheng Yuan, Chenhao Lu, Chengbo Yuan, Tianhai Liang, Xiaoyu Tian, Maanping Shao, Feihong Zhang, Mingyu Ding, Yang Gao, Hao Zhao, Hang Zhao, Huazhe Xu",
+      "type": "paper",
+      "relevance": "围绕通用灵巧手控制构建大规模数据集、统一动作空间和 VLA 策略，核心就是跨手型的灵巧操作。",
+      "novelty_signal": "本轮可确认 CVPR 2026 官方实现已公开，补充了数据准备、重定向、预训练和微调代码，属于重要的发布/代码更新。",
+      "links": [
+        "https://arxiv.org/abs/2603.22264",
+        "https://github.com/unidex-ai/UniDex"
+      ],
+      "confidence": 0.92
+    },
+    {
+      "id": "arxiv:2606.20193",
+      "title": "Belt-Finger: An Affordable Soft Belt-Driven Gripper for Dexterous In-Hand Manipulation",
+      "first_public_date": "2026-06-18",
+      "authors_or_org": "Boya Zhang, Andreas Zell, Georg Martius",
+      "type": "paper",
+      "relevance": "虽然以平行夹爪升级为入口，但核心贡献是增加手内平移、俯仰和滚转等自由度，目标明确指向灵巧手内操作。",
+      "novelty_signal": "提出低成本软皮带驱动指模块，并将其接入 MPC 与遥操作流程，展示了可直接用于灵巧操作的硬件改造方案。",
+      "links": [
+        "https://arxiv.org/abs/2606.20193"
+      ],
+      "confidence": 0.89
+    }
+  ],
   "caveats": [
-    "本轮检索以 arXiv、新近项目页和公开研究页面为主；截至当前 UTC 时间未确认到需要新增报告的高相关条目。",
-    "上次成功运行记录已存在，因此本次严格按增量去重，不重复报告此前已收录工作。"
+    "本轮检索以 arXiv、项目页和 GitHub 官方仓库为主，优先保留原始出处，尽量避免转载或二手报道。",
+    "已按上次成功运行时间做增量去重；6 月 17 日当天但早于上次运行时刻的条目未计入本轮新增。"
   ]
 }

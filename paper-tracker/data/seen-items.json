@@ -52,5 +52,32 @@
     "primary_url": "https://arxiv.org/abs/2606.14606",
     "reported_in": "paper-tracker/reports/2026-06-17.md",
     "last_seen": "2026-06-17T00:00:00Z"
+  },
+  {
+    "id": "arxiv:2606.20549",
+    "title": "Generating Robot Hands from Human Demonstrations",
+    "first_public_date": "2026-06-18",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2606.20549",
+    "reported_in": "paper-tracker/reports/2026-06-22.md",
+    "last_seen": "2026-06-22T20:15:53Z"
+  },
+  {
+    "id": "arxiv:2603.22264",
+    "title": "UniDex: A Robot Foundation Suite for Universal Dexterous Hand Control from Egocentric Human Videos",
+    "first_public_date": "2026-03-23",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2603.22264",
+    "reported_in": "paper-tracker/reports/2026-06-22.md",
+    "last_seen": "2026-06-22T20:15:53Z"
+  },
+  {
+    "id": "arxiv:2606.20193",
+    "title": "Belt-Finger: An Affordable Soft Belt-Driven Gripper for Dexterous In-Hand Manipulation",
+    "first_public_date": "2026-06-18",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2606.20193",
+    "reported_in": "paper-tracker/reports/2026-06-22.md",
+    "last_seen": "2026-06-22T20:15:53Z"
   }
 ]
