@@ -38,6 +38,15 @@ For each item, capture:
 6. novelty signal
 7. original source links
 8. confidence score from 0 to 1
+9. one substantial Chinese analysis paragraph covering: the main contribution, the problem being solved, the method, experiments, results, overall conclusion, and limitations
+
+Analysis quality rules:
+- Read the primary paper abstract and, when available, the paper, project page, or official repository before writing the analysis.
+- Write `analysis_zh` as one self-contained Chinese paragraph of roughly 250 to 500 Chinese characters.
+- Explicitly cover all seven aspects: `主要工作`, `解决问题`, `方法`, `实验`, `结果`, `总结`, and `限制`.
+- Report quantitative results only when the source provides them. Never invent metrics, baselines, hardware setups, datasets, or conclusions.
+- If the available source does not disclose an experimental detail or limitation, say that the public information is insufficient instead of guessing.
+- Keep English model, benchmark, dataset, and system names in their original form when that improves accuracy and text-to-speech clarity.
 
 Files to update:
 - Create `paper-tracker/reports/YYYY-MM-DD.md` using the current UTC date.
@@ -47,7 +56,7 @@ Files to update:
 
 Markdown report format:
 - Start with a short executive summary in Chinese.
-- Then list all items ranked by importance.
+- Then list all items ranked by importance. Include the full `analysis_zh` paragraph for every item.
 - If nothing substantial is found, say so clearly.
 - Include a final section named `检索记录` with run date, search scope, and caveats.
 
@@ -65,6 +74,7 @@ Markdown report format:
       "type": "paper | code | project | dataset | benchmark | announcement | other",
       "relevance": "Chinese explanation",
       "novelty_signal": "Chinese explanation",
+      "analysis_zh": "One detailed Chinese paragraph covering main contribution, problem, method, experiments, results, conclusion, and limitations",
       "links": ["https://..."],
       "confidence": 0.0
     }
