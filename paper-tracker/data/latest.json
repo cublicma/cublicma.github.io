@@ -1,8 +1,10 @@
 {
-  "run_utc": null,
-  "report_path": null,
-  "summary": "还没有成功运行。第一次 GitHub Actions 完成后，这里会显示最新摘要。",
-  "summary_en": "No successful run yet. The latest briefing will appear here after the first completed GitHub Actions run.",
+  "run_utc": "2026-06-23T00:00:00Z",
+  "report_path": "paper-tracker/reports/2026-06-23.md",
+  "summary": "本轮未找到自上次成功运行以来新增且足够相关的灵巧机器人手/灵巧操作工作。",
   "items": [],
-  "caveats": []
+  "caveats": [
+    "本轮优先检索 arXiv、官方项目页和 GitHub 仓库，并严格按灵巧机器人手/灵巧操作作为中心贡献筛选。",
+    "未发现足以确认新增的高相关条目；为避免误报，本轮保持空结果。"
+  ]
 }
