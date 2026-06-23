@@ -11,6 +11,12 @@
       "path": "paper-tracker/reports/2026-06-22.md",
       "summary": "本轮发现 3 项与灵巧机器人手直接相关的新进展，覆盖新硬件、数据/代码套件和低成本灵巧手内操作方案。",
       "item_count": 3
+    },
+    {
+      "date": "2026-06-23",
+      "path": "paper-tracker/reports/2026-06-23.md",
+      "summary": "本轮未找到自上次成功运行以来新增且足够相关的灵巧机器人手/灵巧操作工作。",
+      "item_count": 0
     }
   ]
 }
