@@ -9,11 +9,12 @@
   <body>
     <header class="site-header">
       <div class="topbar">
-        <a class="brand" href="./">Paper Tracker</a>
+        <a class="brand" href="./" data-i18n="brand">Paper Tracker</a>
         <nav class="navlinks" aria-label="站点工具">
-          <button class="text-button" type="button" data-open-config>编辑配置</button>
-          <a href="https://github.com/cublicma/cublicma.github.io/actions/workflows/daily-paper-refresh.yml">手动运行</a>
-          <a href="https://github.com/cublicma/cublicma.github.io/tree/master/paper-tracker/reports">报告源码</a>
+          <button class="text-button" type="button" data-open-config data-i18n="editConfig">编辑配置</button>
+          <a href="https://github.com/cublicma/cublicma.github.io/actions/workflows/daily-paper-refresh.yml" data-i18n="manualRun">手动运行</a>
+          <a href="https://github.com/cublicma/cublicma.github.io/tree/master/paper-tracker/reports" data-i18n="sourceReports">报告源码</a>
+          <a class="language-switch" href="en/" data-language-switch>English</a>
         </nav>
       </div>
       <nav class="topicbar" aria-label="论文专题">
@@ -30,9 +31,10 @@
           <h1>Dex Manipulation</h1>
         </div>
         <div class="status-panel" aria-live="polite">
-          <span class="label">最近运行</span>
+          <span class="label" data-i18n="lastRun">最近运行</span>
           <strong id="run-time">读取中</strong>
           <span id="item-count">--</span>
+          <span id="view-date" class="view-date"></span>
         </div>
       </section>
 
@@ -40,28 +42,28 @@
         <div class="section-head digest-head">
           <div>
             <span class="section-kicker">Daily Briefing</span>
-            <h2>今日摘要与精读</h2>
+            <h2 data-i18n="briefingTitle">今日摘要与精读</h2>
           </div>
-          <a id="latest-report-link" href="#">打开 Markdown</a>
+          <a id="latest-report-link" href="#" data-i18n="openMarkdown">打开 Markdown</a>
         </div>
 
-        <div class="speech-player" aria-label="语音朗读">
+        <div class="speech-player" aria-label="语音朗读" data-i18n-aria-label="speechPlayer">
           <button id="speech-play" class="primary-button speech-play" type="button" disabled>
             <span aria-hidden="true">▶</span>
-            <span>播放全部</span>
+            <span data-i18n="playAll">播放全部</span>
           </button>
           <button id="speech-pause" class="audio-icon-button" type="button" aria-label="暂停" title="暂停" disabled>Ⅱ</button>
           <button id="speech-stop" class="audio-icon-button" type="button" aria-label="停止" title="停止" disabled>■</button>
           <label class="speech-select">
-            <span>语音</span>
+            <span data-i18n="voice">语音</span>
             <select id="speech-language">
-              <option value="auto">中英自动</option>
-              <option value="zh-CN">中文</option>
+              <option value="auto" data-i18n="voiceAuto">中英自动</option>
+              <option value="zh-CN" data-i18n="voiceChinese">中文</option>
               <option value="en-US">English</option>
             </select>
           </label>
           <label class="speech-select">
-            <span>语速</span>
+            <span data-i18n="speed">语速</span>
             <select id="speech-rate">
               <option value="0.85">0.85x</option>
               <option value="1" selected>1.0x</option>
@@ -79,15 +81,15 @@
 
       <section class="panel config">
         <div class="section-head">
-          <h2>搜索配置</h2>
-          <button class="text-button" type="button" data-open-config>修改</button>
+          <h2 data-i18n="configTitle">搜索配置</h2>
+          <button class="text-button" type="button" data-open-config data-i18n="modify">修改</button>
         </div>
         <dl id="config-list"></dl>
       </section>
 
       <section class="panel">
         <div class="section-head">
-          <h2>本次发现</h2>
+          <h2 data-i18n="discoveriesTitle">本次发现</h2>
           <span id="items-label">等待数据</span>
         </div>
         <div id="items" class="items"></div>
@@ -95,7 +97,7 @@
 
       <section class="panel">
         <div class="section-head">
-          <h2>历史报告</h2>
+          <h2 data-i18n="reportsTitle">历史报告</h2>
           <span id="reports-label">--</span>
         </div>
         <div id="reports" class="reports"></div>
@@ -107,58 +109,58 @@
         <div class="dialog-head">
           <div>
             <span class="dialog-kicker">Dex Manipulation</span>
-            <h2 id="config-editor-title">编辑搜索配置</h2>
+            <h2 id="config-editor-title" data-i18n="configDialogTitle">编辑搜索配置</h2>
           </div>
           <button class="icon-button" type="button" data-close-config aria-label="关闭">&times;</button>
         </div>
 
         <div class="form-grid">
           <label class="field field-wide">
-            <span>关键词</span>
+            <span data-i18n="keywords">关键词</span>
             <textarea id="config-keywords" rows="8" required spellcheck="false"></textarea>
-            <small>每行一个关键词</small>
+            <small data-i18n="onePerLine">每行一个关键词</small>
           </label>
 
           <label class="field field-wide">
-            <span>搜索来源</span>
+            <span data-i18n="sources">搜索来源</span>
             <textarea id="config-sources" rows="6" required spellcheck="false"></textarea>
-            <small>每行一个来源</small>
+            <small data-i18n="sourcePerLine">每行一个来源</small>
           </label>
 
           <label class="field">
-            <span>回看天数</span>
+            <span data-i18n="lookbackDays">回看天数</span>
             <input id="config-lookback" type="number" min="1" max="365" required>
           </label>
 
           <label class="field">
-            <span>每次最多条目</span>
+            <span data-i18n="maxItems">每次最多条目</span>
             <input id="config-max-items" type="number" min="1" max="50" required>
           </label>
         </div>
 
         <details class="advanced-fields">
-          <summary>高级范围</summary>
+          <summary data-i18n="advancedScope">高级范围</summary>
           <div class="form-grid advanced-grid">
             <label class="field field-wide">
-              <span>收录条件</span>
+              <span data-i18n="includeCriteria">收录条件</span>
               <textarea id="config-include" rows="5" spellcheck="false"></textarea>
             </label>
             <label class="field field-wide">
-              <span>排除条件</span>
+              <span data-i18n="excludeCriteria">排除条件</span>
               <textarea id="config-exclude" rows="4" spellcheck="false"></textarea>
             </label>
             <label class="field field-wide">
-              <span>排序偏好</span>
+              <span data-i18n="rankingPreference">排序偏好</span>
               <textarea id="config-ranking" rows="4" spellcheck="false"></textarea>
             </label>
           </div>
         </details>
 
         <div class="dialog-actions">
-          <span id="config-submit-status">仅接受 cublicma 提交的请求</span>
+          <span id="config-submit-status" data-i18n="ownerOnly">仅接受 cublicma 提交的请求</span>
           <div>
-            <button class="secondary-button" type="button" data-close-config>取消</button>
-            <button class="primary-button" type="submit">提交审批</button>
+            <button class="secondary-button" type="button" data-close-config data-i18n="cancel">取消</button>
+            <button class="primary-button" type="submit" data-i18n="submitForReview">提交审批</button>
           </div>
         </div>
       </form>

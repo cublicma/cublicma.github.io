@@ -2,9 +2,11 @@ Run the paper tracker update for this GitHub Pages repository.
 
 Repository contract:
 - Read `paper-tracker/config.json` first. Treat it as the user-editable search configuration.
+- Read `.github/codex/refresh-context.json` if it exists. If `refresh_today` is true, recreate the current UTC day's output from scratch and do not preserve any earlier same-day report content. Continue to treat items from earlier dates as already seen unless they have a major update.
 - Read `paper-tracker/data/seen-items.json` if it exists.
 - Read `paper-tracker/data/latest.json` and `paper-tracker/data/reports.json` if they exist.
-- Write user-facing report content in Chinese.
+- Read prior daily page data from `paper-tracker/data/daily/*.json` only when it helps avoid duplicates.
+- Write user-facing report content in Chinese, and also write native English fields for the English web page.
 - Keep all JSON files valid, pretty-printed, and UTF-8.
 
 Search goal:
@@ -39,11 +41,14 @@ For each item, capture:
 7. original source links
 8. confidence score from 0 to 1
 9. one substantial Chinese analysis paragraph covering: the main contribution, the problem being solved, the method, experiments, results, overall conclusion, and limitations
+10. one native English analysis paragraph covering the same points, written naturally for an English-speaking robotics researcher
 
 Analysis quality rules:
 - Read the primary paper abstract and, when available, the paper, project page, or official repository before writing the analysis.
 - Write `analysis_zh` as one self-contained Chinese paragraph of roughly 250 to 500 Chinese characters.
+- Write `analysis_en` as one self-contained native English paragraph of roughly 140 to 260 words.
 - Explicitly cover all seven aspects: `主要工作`, `解决问题`, `方法`, `实验`, `结果`, `总结`, and `限制`.
+- In English, explicitly cover the same seven aspects in natural prose: main contribution, problem, method, experiments, results, conclusion, and limitations.
 - Report quantitative results only when the source provides them. Never invent metrics, baselines, hardware setups, datasets, or conclusions.
 - If the available source does not disclose an experimental detail or limitation, say that the public information is insufficient instead of guessing.
 - Keep English model, benchmark, dataset, and system names in their original form when that improves accuracy and text-to-speech clarity.
@@ -51,12 +56,15 @@ Analysis quality rules:
 Files to update:
 - Create `paper-tracker/reports/YYYY-MM-DD.md` using the current UTC date.
 - Update `paper-tracker/data/latest.json`.
+- Create or replace `paper-tracker/data/daily/YYYY-MM-DD.json` with the same structured content as `latest.json`.
 - Update `paper-tracker/data/reports.json`.
 - Update `paper-tracker/data/seen-items.json`.
 
 Markdown report format:
 - Start with a short executive summary in Chinese.
+- Include a short native English summary after the Chinese executive summary.
 - Then list all items ranked by importance. Include the full `analysis_zh` paragraph for every item.
+- Include each item's `analysis_en` paragraph after the Chinese analysis.
 - If nothing substantial is found, say so clearly.
 - Include a final section named `检索记录` with run date, search scope, and caveats.
 
@@ -65,6 +73,7 @@ Markdown report format:
   "run_utc": "ISO-8601 timestamp",
   "report_path": "paper-tracker/reports/YYYY-MM-DD.md",
   "summary": "Chinese summary",
+  "summary_en": "Native English summary",
   "items": [
     {
       "id": "stable id",
@@ -73,8 +82,11 @@ Markdown report format:
       "authors_or_org": "authors or organization",
       "type": "paper | code | project | dataset | benchmark | announcement | other",
       "relevance": "Chinese explanation",
+      "relevance_en": "Native English explanation",
       "novelty_signal": "Chinese explanation",
+      "novelty_signal_en": "Native English explanation",
       "analysis_zh": "One detailed Chinese paragraph covering main contribution, problem, method, experiments, results, conclusion, and limitations",
+      "analysis_en": "One detailed native English paragraph covering main contribution, problem, method, experiments, results, conclusion, and limitations",
       "links": ["https://..."],
       "confidence": 0.0
     }
@@ -89,10 +101,14 @@ Markdown report format:
       "date": "YYYY-MM-DD",
       "path": "paper-tracker/reports/YYYY-MM-DD.md",
       "summary": "Chinese summary",
+      "summary_en": "Native English summary",
       "item_count": 0
     }
   ]
 }
+
+`paper-tracker/data/daily/YYYY-MM-DD.json` schema:
+Use exactly the same schema as `paper-tracker/data/latest.json` for that run. This file powers the historical web page view.
 
 `paper-tracker/data/seen-items.json` schema:
 [

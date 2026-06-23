@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 16 * * *"
   workflow_dispatch:
+    inputs:
+      refresh_today:
+        description: "Delete today's earlier tracker output before running"
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -31,6 +37,11 @@ jobs:
             echo "OPENAI_API_KEY is not set. Add it in Settings > Secrets and variables > Actions."
             exit 1
           fi
+
+      - name: Prepare tracker refresh
+        env:
+          REFRESH_TODAY: ${{ inputs.refresh_today || 'false' }}
+        run: node scripts/prepare-paper-tracker-refresh.mjs
 
       - name: Run Codex research refresh
         id: codex

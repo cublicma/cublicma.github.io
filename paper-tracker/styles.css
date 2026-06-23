@@ -67,6 +67,20 @@ a:hover {
   font-size: 14px;
 }
 
+.language-switch {
+  padding: 2px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 650;
+}
+
+.language-switch:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
 .text-button {
   padding: 0;
   border: 0;
@@ -167,6 +181,13 @@ h2 {
   display: block;
   color: var(--muted);
   font-size: 13px;
+}
+
+.view-date {
+  display: block;
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .status-panel strong {
@@ -440,7 +461,7 @@ dd {
 
 .report-row {
   display: grid;
-  grid-template-columns: 120px minmax(0, 1fr) 80px;
+  grid-template-columns: 120px minmax(0, 1fr) 110px;
   gap: 12px;
   align-items: start;
   padding: 12px 0;
@@ -454,6 +475,12 @@ dd {
 .report-row time {
   color: var(--muted);
   font-size: 14px;
+}
+
+.report-row span {
+  color: var(--muted);
+  font-size: 14px;
+  text-align: right;
 }
 
 .empty {
