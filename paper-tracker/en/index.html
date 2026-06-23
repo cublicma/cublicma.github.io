@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paper Tracker | Dex Manipulation</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="topbar">
+        <a class="brand" href="../" data-i18n="brand">Paper Tracker</a>
+        <nav class="navlinks" aria-label="Site tools">
+          <button class="text-button" type="button" data-open-config data-i18n="editConfig">Edit Config</button>
+          <a href="https://github.com/cublicma/cublicma.github.io/actions/workflows/daily-paper-refresh.yml" data-i18n="manualRun">Run Now</a>
+          <a href="https://github.com/cublicma/cublicma.github.io/tree/master/paper-tracker/reports" data-i18n="sourceReports">Report Source</a>
+          <a class="language-switch" href="../" data-language-switch>中文</a>
+        </nav>
+      </div>
+      <nav class="topicbar" aria-label="Paper topics">
+        <a class="topic-link is-active" href="./" aria-current="page">Dex Manipulation</a>
+        <span class="topic-link is-disabled" aria-disabled="true" title="Topic is not configured yet">Tactile Sensing</span>
+        <span class="topic-link is-disabled" aria-disabled="true" title="Topic is not configured yet">Humanoid Robotics</span>
+        <span class="topic-link is-disabled" aria-disabled="true" title="Topic is not configured yet">Robot Learning</span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1>Dex Manipulation</h1>
+        </div>
+        <div class="status-panel" aria-live="polite">
+          <span class="label" data-i18n="lastRun">Last Run</span>
+          <strong id="run-time">Loading</strong>
+          <span id="item-count">--</span>
+          <span id="view-date" class="view-date"></span>
+        </div>
+      </section>
+
+      <section class="panel latest digest-panel">
+        <div class="section-head digest-head">
+          <div>
+            <span class="section-kicker">Daily Briefing</span>
+            <h2 data-i18n="briefingTitle">Briefing and Analysis</h2>
+          </div>
+          <a id="latest-report-link" href="#" data-i18n="openMarkdown">Open Markdown</a>
+        </div>
+
+        <div class="speech-player" aria-label="Text to speech" data-i18n-aria-label="speechPlayer">
+          <button id="speech-play" class="primary-button speech-play" type="button" disabled>
+            <span aria-hidden="true">▶</span>
+            <span data-i18n="playAll">Play All</span>
+          </button>
+          <button id="speech-pause" class="audio-icon-button" type="button" aria-label="Pause" title="Pause" disabled>Ⅱ</button>
+          <button id="speech-stop" class="audio-icon-button" type="button" aria-label="Stop" title="Stop" disabled>■</button>
+          <label class="speech-select">
+            <span data-i18n="voice">Voice</span>
+            <select id="speech-language">
+              <option value="auto" data-i18n="voiceAuto">Auto</option>
+              <option value="zh-CN" data-i18n="voiceChinese">Chinese</option>
+              <option value="en-US">English</option>
+            </select>
+          </label>
+          <label class="speech-select">
+            <span data-i18n="speed">Speed</span>
+            <select id="speech-rate">
+              <option value="0.85">0.85x</option>
+              <option value="1" selected>1.0x</option>
+              <option value="1.15">1.15x</option>
+              <option value="1.3">1.3x</option>
+            </select>
+          </label>
+          <span id="speech-status" class="speech-status" aria-live="polite">Waiting for content</span>
+        </div>
+
+        <p id="latest-summary">Loading the latest results...</p>
+        <div id="daily-analysis" class="daily-analysis"></div>
+        <div id="caveats" class="caveats"></div>
+      </section>
+
+      <section class="panel config">
+        <div class="section-head">
+          <h2 data-i18n="configTitle">Search Configuration</h2>
+          <button class="text-button" type="button" data-open-config data-i18n="modify">Edit</button>
+        </div>
+        <dl id="config-list"></dl>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2 data-i18n="discoveriesTitle">Findings</h2>
+          <span id="items-label">Waiting for data</span>
+        </div>
+        <div id="items" class="items"></div>
+      </section>
+
+      <section class="panel">
+        <div class="section-head">
+          <h2 data-i18n="reportsTitle">Daily Archive</h2>
+          <span id="reports-label">--</span>
+        </div>
+        <div id="reports" class="reports"></div>
+      </section>
+    </main>
+
+    <dialog id="config-editor" aria-labelledby="config-editor-title">
+      <form id="config-form" method="dialog">
+        <div class="dialog-head">
+          <div>
+            <span class="dialog-kicker">Dex Manipulation</span>
+            <h2 id="config-editor-title" data-i18n="configDialogTitle">Edit Search Configuration</h2>
+          </div>
+          <button class="icon-button" type="button" data-close-config aria-label="Close">&times;</button>
+        </div>
+
+        <div class="form-grid">
+          <label class="field field-wide">
+            <span data-i18n="keywords">Keywords</span>
+            <textarea id="config-keywords" rows="8" required spellcheck="false"></textarea>
+            <small data-i18n="onePerLine">One keyword per line</small>
+          </label>
+
+          <label class="field field-wide">
+            <span data-i18n="sources">Sources</span>
+            <textarea id="config-sources" rows="6" required spellcheck="false"></textarea>
+            <small data-i18n="sourcePerLine">One source per line</small>
+          </label>
+
+          <label class="field">
+            <span data-i18n="lookbackDays">Lookback Days</span>
+            <input id="config-lookback" type="number" min="1" max="365" required>
+          </label>
+
+          <label class="field">
+            <span data-i18n="maxItems">Max Items per Run</span>
+            <input id="config-max-items" type="number" min="1" max="50" required>
+          </label>
+        </div>
+
+        <details class="advanced-fields">
+          <summary data-i18n="advancedScope">Advanced Scope</summary>
+          <div class="form-grid advanced-grid">
+            <label class="field field-wide">
+              <span data-i18n="includeCriteria">Include Criteria</span>
+              <textarea id="config-include" rows="5" spellcheck="false"></textarea>
+            </label>
+            <label class="field field-wide">
+              <span data-i18n="excludeCriteria">Exclude Criteria</span>
+              <textarea id="config-exclude" rows="4" spellcheck="false"></textarea>
+            </label>
+            <label class="field field-wide">
+              <span data-i18n="rankingPreference">Ranking Preference</span>
+              <textarea id="config-ranking" rows="4" spellcheck="false"></textarea>
+            </label>
+          </div>
+        </details>
+
+        <div class="dialog-actions">
+          <span id="config-submit-status" data-i18n="ownerOnly">Only cublicma can submit requests</span>
+          <div>
+            <button class="secondary-button" type="button" data-close-config data-i18n="cancel">Cancel</button>
+            <button class="primary-button" type="submit" data-i18n="submitForReview">Submit for Review</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
