@@ -4,19 +4,22 @@
       "date": "2026-06-17",
       "path": "paper-tracker/reports/2026-06-17.md",
       "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧手/灵巧操作工作；为避免重复和误报，本次不新增条目。",
+      "summary_en": "No newly relevant dexterous-hand or dexterous-manipulation work was found since the previous successful run, so no items were added.",
       "item_count": 0
     },
     {
       "date": "2026-06-22",
       "path": "paper-tracker/reports/2026-06-22.md",
       "summary": "本轮发现 3 项与灵巧机器人手直接相关的新进展，覆盖新硬件、数据/代码套件和低成本灵巧手内操作方案。",
+      "summary_en": "This run found three new items directly related to dexterous robot hands, covering new hardware, a data/code suite, and a low-cost in-hand manipulation solution.",
       "item_count": 3
     },
     {
       "date": "2026-06-23",
       "path": "paper-tracker/reports/2026-06-23.md",
-      "summary": "本轮未找到自上次成功运行以来新增且足够相关的灵巧机器人手/灵巧操作工作。",
-      "item_count": 0
+      "summary": "本轮发现 3 项与灵巧机器人手直接相关的新进展，分别聚焦自动化灵巧抓取数据采集、双手灵巧遥操作，以及面向连续灵巧人形机动操作的协调策略。",
+      "summary_en": "This run surfaced three new items directly relevant to dexterous robot hands: automated dexterous grasping data collection, bimanual dexterous teleoperation, and coordinated policies for continuous dexterous humanoid loco-manipulation.",
+      "item_count": 3
     }
   ]
 }
