@@ -1,12 +1,81 @@
 {
-  "run_utc": "2026-06-24T00:00:00Z",
+  "run_utc": "2026-06-24T17:56:36Z",
   "report_path": "paper-tracker/reports/2026-06-24.md",
-  "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作工作。",
-  "summary_en": "No newly relevant dexterous robot hand or dexterous manipulation work was found since the previous successful run.",
-  "items": [],
+  "summary": "本轮发现 4 项与灵巧机器人手或灵巧操作直接相关的新条目，覆盖新型灵巧手关节、接触感知内操作、长时程灵巧操作推理，以及来自日常人类视频的数据构建。",
+  "summary_en": "This run found four new items directly relevant to dexterous robot hands or dexterous manipulation, covering a new dexterous-hand joint, contact-aware in-hand manipulation, long-horizon dexterous manipulation reasoning, and dataset construction from everyday human videos.",
+  "items": [
+    {
+      "id": "arxiv:2606.24377",
+      "title": "PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands",
+      "first_public_date": "2026-06-23",
+      "authors_or_org": "arXiv preprint",
+      "type": "paper",
+      "relevance": "提出面向灵巧手的双螺旋参数化关节结构，属于灵巧机器人手硬件本体设计。",
+      "relevance_en": "Introduces a parametric double-spiral joint specifically designed for dexterous hands, so the hand hardware itself is the core contribution.",
+      "novelty_signal": "新的灵巧手关节机构设计与公开预印本。",
+      "novelty_signal_en": "New dexterous-hand joint mechanism and a newly surfaced arXiv preprint.",
+      "analysis_zh": "这项工作主要贡献在于提出一类面向灵巧手的参数化双螺旋关节，用机构设计而不是纯控制算法去解决灵巧手在紧凑结构、可动范围与力学性能之间的权衡问题。公开信息显示其方法围绕关节结构参数化展开，目标是服务多指灵巧手的设计空间探索。实验部分应以原型验证和机构性能评估为主，但当前可见摘要信息对具体测试指标披露有限，因此无法可靠补充详细数值。总体来看，它的价值在于把关节这个关键机械单元做成可设计、可调参的基础模块，可能为后续灵巧手平台提供更好的几何与功能折中；限制则是公开信息尚不足以判断其对整手系统、控制复杂度和实际任务性能的提升幅度。",
+      "analysis_en": "The main contribution is a parametric double-spiral joint aimed at dexterous hands, shifting the problem from policy design to the mechanical trade-offs that constrain compact multi-finger hands, including range of motion, packaging, and force transmission. The public information suggests a structural, parameterized approach for exploring the design space of dexterous-hand joints, rather than a control-heavy method. Experiments appear to focus on prototype validation and mechanism-level evaluation, but the abstract-level material does not disclose enough detail to report robust metrics or task results. Overall, the work is valuable as a reusable hardware primitive that could improve future dexterous-hand platforms, while the limitation is that the public description is not yet sufficient to judge system-level performance gains, control complexity, or robustness in real manipulation tasks.",
+      "links": [
+        "https://arxiv.org/abs/2606.24377"
+      ],
+      "confidence": 0.88
+    },
+    {
+      "id": "arxiv:2606.24450",
+      "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+      "first_public_date": "2026-06-23",
+      "authors_or_org": "arXiv preprint",
+      "type": "paper",
+      "relevance": "直接围绕内操作中的接触估计展开，接触感知对灵巧手操作是核心能力。",
+      "relevance_en": "Focuses on contact estimation for in-hand dexterous manipulation, which is a central capability for dexterous robot hands.",
+      "novelty_signal": "新的接触推断方法，且明确面向 in-hand dexterous manipulation。",
+      "novelty_signal_en": "Newly surfaced method paper centered on contact-aware in-hand manipulation.",
+      "analysis_zh": "这项工作主要解决灵巧手内操作中“看不见接触、却必须利用接触”的问题，核心贡献是结合视觉与本体感觉去估计接触状态，从而为内操作提供更稳定的反馈信号。方法上，它把多模态观测与接触推断连接起来，目标是在接触频繁变化、姿态空间狭窄的任务里减少盲操作。公开摘要能确认其面向 in-hand dexterous manipulation，但尚未完整披露实验设置、基线和量化提升幅度，因此不宜补充未验证细节。总体上，这项工作对灵巧手控制链条中的感知环节很关键，能够补足传统仅靠位姿或力信号的不足；限制在于当前公开材料还不足以判断它对复杂长序列任务的泛化能力，以及在不同硬件平台上的迁移表现。",
+      "analysis_en": "This paper tackles the problem of hidden contact in in-hand dexterous manipulation, where a hand must rely on contact but cannot directly observe it reliably. Its main contribution is a contact-estimation approach that combines vision and proprioception to provide a more stable feedback signal for manipulation under changing contact conditions and tight pose constraints. Methodologically, it links multimodal observations to contact inference, aiming to reduce blind manipulation during highly interactive hand-object motions. The abstract confirms that it is centered on in-hand dexterous manipulation, but the public material does not yet expose enough detail about the experiment setup, baselines, or quantitative gains to report specifics safely. Overall, the work is important because it strengthens the perception loop that dexterous hands need, beyond pure pose or force sensing; the limitation is that the current public information is still insufficient to judge generalization to long-horizon tasks or transfer across different hardware platforms.",
+      "links": [
+        "https://arxiv.org/abs/2606.24450"
+      ],
+      "confidence": 0.89
+    },
+    {
+      "id": "arxiv:2606.19340",
+      "title": "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View Grounding",
+      "first_public_date": "2026-06-17",
+      "authors_or_org": "arXiv preprint",
+      "type": "paper",
+      "relevance": "直接面向长时程灵巧操作，核心对象仍是灵巧手/灵巧操作。",
+      "relevance_en": "Directly targets long-horizon dexterous manipulation, keeping dexterous hand execution central.",
+      "novelty_signal": "新的零样本长时程灵巧操作方法，并带有多视角 grounding 设定。",
+      "novelty_signal_en": "A new zero-shot long-horizon dexterous manipulation method with multi-view grounding.",
+      "analysis_zh": "这项工作主要贡献是把多视角 grounding 引入零样本长时程灵巧操作，解决的是灵巧手在连续多步骤任务里缺少稳定语义定位与时序规划的问题。方法上，它把多视角信息用于任务理解与动作落地，希望减少对任务特定微调的依赖。公开摘要足以确认其问题设定与中心任务，但对实验对象、任务集和结果细节披露有限，因此这里只能保守描述为有真实系统评估的可能，而不能补充未经证实的数值。总体来看，它试图把视觉语义和灵巧执行连接起来，是方法层面比较有代表性的工作；限制在于目前公开信息不足，难以判断其在复杂接触、长时程误差累积和跨场景泛化方面的上限。",
+      "analysis_en": "The main contribution is the introduction of multi-view grounding for zero-shot long-horizon dexterous manipulation, addressing the difficulty of keeping semantic localization and temporal planning stable across multi-step hand-object tasks. In method terms, it uses multi-view information to support task understanding and action grounding, with the goal of reducing dependence on task-specific fine-tuning. The abstract is enough to confirm the problem framing and the central dexterous-manipulation target, but it does not disclose enough experimental detail to safely report the task suite, setup, or quantitative results. Overall, the work is a notable method-level attempt to connect visual semantics with dexterous execution; the limitation is that the public information is still insufficient to assess how well it handles complex contact, compounding long-horizon errors, or cross-scene generalization.",
+      "links": [
+        "https://arxiv.org/abs/2606.19340"
+      ],
+      "confidence": 0.84
+    },
+    {
+      "id": "arxiv:2606.19333",
+      "title": "Do as I Do: Dexterous Manipulation Data from Everyday Human Videos",
+      "first_public_date": "2026-06-17",
+      "authors_or_org": "arXiv preprint",
+      "type": "dataset",
+      "relevance": "以灵巧操作数据构建为中心，直接服务灵巧手学习与迁移。",
+      "relevance_en": "Centers on building dexterous-manipulation data from everyday human videos, which directly supports dexterous-hand learning and transfer.",
+      "novelty_signal": "来自日常人类视频的新数据构建路线，面向灵巧操作。",
+      "novelty_signal_en": "A newly surfaced data-centric pipeline for dexterous manipulation from everyday human videos.",
+      "analysis_zh": "这项工作的主要贡献是从日常人类视频中构建灵巧操作数据，目的是缓解灵巧手学习中的数据稀缺问题。它解决的是高质量灵巧操作示范难以规模化采集的瓶颈，方法上显然依赖从视频中提取可用于机器人学习的操作片段或轨迹表示。公开信息目前更像数据/管线公告，实验与结果细节尚未完全展开，因此不能断言具体覆盖的任务数量、硬件平台或性能提升幅度。总体而言，它的价值在于把灵巧操作数据来源从昂贵的机器人采集扩展到更广泛的人类视频资产；限制是视频到机器人执行之间的形态差距仍然很大，数据质量、对齐误差和真实手平台适配能力都需要进一步验证。",
+      "analysis_en": "The main contribution is a dexterous-manipulation dataset construction pipeline derived from everyday human videos, aimed at relieving the data scarcity that limits dexterous-hand learning. It addresses the bottleneck that high-quality dexterous demonstrations are expensive and difficult to scale, and the method appears to extract manipulation segments or trajectory representations from video for robot learning. The public information currently reads more like a dataset/pipeline announcement than a full systems paper, so the experimental setup and results are not yet fully exposed, and I cannot safely state the number of tasks, hardware platforms, or performance gains. Overall, the value is that it broadens data acquisition beyond expensive robot collection toward a larger human-video corpus; the limitation is the substantial morphology gap between human video and robot execution, together with likely challenges in data quality, alignment error, and transfer to real hand platforms.",
+      "links": [
+        "https://arxiv.org/abs/2606.19333"
+      ],
+      "confidence": 0.82
+    }
+  ],
   "caveats": [
-    "本轮优先检索 arXiv 与相关原始页面，并严格按灵巧机器人手与灵巧操作是否为中心贡献筛选。",
-    "已见状态中 2026-06-23 及之前的条目继续视为历史记录；本轮未发现需要新增收录的高置信度条目。",
-    "本轮没有生成项目列表，因此 latest 与 daily 仅记录空结果与检索说明。"
+    "本轮优先检索 arXiv 与原始项目页，严格按灵巧机器人手与灵巧操作是否为中心贡献筛选。",
+    "公开摘要对部分条目的作者列表、实验细节与定量结果披露有限，因此分析中对这些部分采用保守表述。",
+    "本轮新增 4 项高相关条目，已同步更新日报与历史状态文件。"
   ]
 }
