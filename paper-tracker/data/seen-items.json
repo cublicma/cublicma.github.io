@@ -106,5 +106,41 @@
     "primary_url": "https://arxiv.org/abs/2606.23680",
     "reported_in": "paper-tracker/reports/2026-06-23.md",
     "last_seen": "2026-06-23T00:00:00Z"
+  },
+  {
+    "id": "arxiv:2606.24377",
+    "title": "PDS Joint: A Parametric Double-Spiral Joint Tailored for Dexterous Hands",
+    "first_public_date": "2026-06-23",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2606.24377",
+    "reported_in": "paper-tracker/reports/2026-06-24.md",
+    "last_seen": "2026-06-24T17:56:36Z"
+  },
+  {
+    "id": "arxiv:2606.24450",
+    "title": "NoContactNoWorries: Estimating Contact through Vision and Proprioception for In-Hand Dexterous Manipulation",
+    "first_public_date": "2026-06-23",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2606.24450",
+    "reported_in": "paper-tracker/reports/2026-06-24.md",
+    "last_seen": "2026-06-24T17:56:36Z"
+  },
+  {
+    "id": "arxiv:2606.19340",
+    "title": "Zero-Shot Long-Horizon Dexterous Manipulation via Multi-View Grounding",
+    "first_public_date": "2026-06-17",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2606.19340",
+    "reported_in": "paper-tracker/reports/2026-06-24.md",
+    "last_seen": "2026-06-24T17:56:36Z"
+  },
+  {
+    "id": "arxiv:2606.19333",
+    "title": "Do as I Do: Dexterous Manipulation Data from Everyday Human Videos",
+    "first_public_date": "2026-06-17",
+    "type": "dataset",
+    "primary_url": "https://arxiv.org/abs/2606.19333",
+    "reported_in": "paper-tracker/reports/2026-06-24.md",
+    "last_seen": "2026-06-24T17:56:36Z"
   }
 ]

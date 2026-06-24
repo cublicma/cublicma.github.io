@@ -24,9 +24,9 @@
     {
       "date": "2026-06-24",
       "path": "paper-tracker/reports/2026-06-24.md",
-      "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作工作。",
-      "summary_en": "No newly relevant dexterous robot hand or dexterous manipulation work was found since the previous successful run.",
-      "item_count": 0
+      "summary": "本轮发现 4 项与灵巧机器人手或灵巧操作直接相关的新条目，覆盖新型灵巧手关节、接触感知内操作、长时程灵巧操作推理，以及来自日常人类视频的数据构建。",
+      "summary_en": "This run found four new items directly relevant to dexterous robot hands or dexterous manipulation, covering a new dexterous-hand joint, contact-aware in-hand manipulation, long-horizon dexterous manipulation reasoning, and dataset construction from everyday human videos.",
+      "item_count": 4
     }
   ]
 }
