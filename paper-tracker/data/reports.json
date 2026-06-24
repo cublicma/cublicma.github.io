@@ -20,6 +20,13 @@
       "summary": "本轮发现 3 项与灵巧机器人手直接相关的新进展，分别聚焦自动化灵巧抓取数据采集、双手灵巧遥操作，以及面向连续灵巧人形机动操作的协调策略。",
       "summary_en": "This run surfaced three new items directly relevant to dexterous robot hands: automated dexterous grasping data collection, bimanual dexterous teleoperation, and coordinated policies for continuous dexterous humanoid loco-manipulation.",
       "item_count": 3
+    },
+    {
+      "date": "2026-06-24",
+      "path": "paper-tracker/reports/2026-06-24.md",
+      "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作工作。",
+      "summary_en": "No newly relevant dexterous robot hand or dexterous manipulation work was found since the previous successful run.",
+      "item_count": 0
     }
   ]
 }
