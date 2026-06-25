@@ -27,6 +27,13 @@
       "summary": "本轮发现 4 项与灵巧机器人手或灵巧操作直接相关的新条目，覆盖新型灵巧手关节、接触感知内操作、长时程灵巧操作推理，以及来自日常人类视频的数据构建。",
       "summary_en": "This run found four new items directly relevant to dexterous robot hands or dexterous manipulation, covering a new dexterous-hand joint, contact-aware in-hand manipulation, long-horizon dexterous manipulation reasoning, and dataset construction from everyday human videos.",
       "item_count": 4
+    },
+    {
+      "date": "2026-06-25",
+      "path": "paper-tracker/reports/2026-06-25.md",
+      "summary": "本轮检索发现 1 项新的高相关条目：一篇面向共体式可穿戴机器人手的变量自主权方法论文。它把人机共享单一物理身体、在不同任务阶段切换自主等级作为核心贡献，且包含真实用户研究与量化结果，因此属于本轮最值得跟踪的新增进展。",
+      "summary_en": "This run found 1 newly relevant item: a paper on variable autonomy for a co-embodied wearable robotic hand. It makes human-robot co-embodiment over a single physical body the central contribution, and it includes a real user study with quantitative results, so it is the most important new item to track in this run.",
+      "item_count": 1
     }
   ]
 }

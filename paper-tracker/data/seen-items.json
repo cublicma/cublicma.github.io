@@ -142,5 +142,14 @@
     "primary_url": "https://arxiv.org/abs/2606.19333",
     "reported_in": "paper-tracker/reports/2026-06-24.md",
     "last_seen": "2026-06-24T17:56:36Z"
+  },
+  {
+    "id": "arxiv:2606.25575",
+    "title": "One Body, Two Minds: Variable Autonomy Approach for a Co-embodied Robotic Hand",
+    "first_public_date": "2026-06-24",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2606.25575",
+    "reported_in": "paper-tracker/reports/2026-06-25.md",
+    "last_seen": "2026-06-25T00:00:00Z"
   }
 ]
