@@ -34,6 +34,13 @@
       "summary": "本轮检索发现 1 项新的高相关条目：一篇面向共体式可穿戴机器人手的变量自主权方法论文。它把人机共享单一物理身体、在不同任务阶段切换自主等级作为核心贡献，且包含真实用户研究与量化结果，因此属于本轮最值得跟踪的新增进展。",
       "summary_en": "This run found 1 newly relevant item: a paper on variable autonomy for a co-embodied wearable robotic hand. It makes human-robot co-embodiment over a single physical body the central contribution, and it includes a real user study with quantitative results, so it is the most important new item to track in this run.",
       "item_count": 1
+    },
+    {
+      "date": "2026-06-26",
+      "path": "paper-tracker/reports/2026-06-26.md",
+      "summary": "本轮检索到 1 项新的高相关工作：`VibeAct`，它把振动信号用于接触丰富的反应式灵巧操作控制，主题与灵巧机器人手直接相关，且发布时间晚于上一轮成功运行，因此应作为新增条目收录。整体来看，本轮没有发现大量新文献，但这项工作在触觉感知与灵巧操作闭环控制之间建立了清晰连接，值得继续跟进其后续代码与实机结果。",
+      "summary_en": "This run found 1 newly relevant item: `VibeAct`, which uses vibration signals for contact-rich reactive robot dexterity. It is directly aligned with dexterous robot hands and was published after the previous successful run, so it should be added as a new item. No broad wave of new papers appeared in this run, but this work is notable because it connects tactile sensing to closed-loop dexterous manipulation in a concrete way.",
+      "item_count": 1
     }
   ]
 }
