@@ -151,5 +151,14 @@
     "primary_url": "https://arxiv.org/abs/2606.25575",
     "reported_in": "paper-tracker/reports/2026-06-25.md",
     "last_seen": "2026-06-25T00:00:00Z"
+  },
+  {
+    "id": "arxiv:2606.27344",
+    "title": "VibeAct: Vibration to Actions for Contact-Rich Reactive Robot Dexterity",
+    "first_public_date": "2026-06-25",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2606.27344",
+    "reported_in": "paper-tracker/reports/2026-06-26.md",
+    "last_seen": "2026-06-26T17:50:56Z"
   }
 ]
