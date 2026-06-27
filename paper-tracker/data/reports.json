@@ -41,6 +41,13 @@
       "summary": "本轮检索到 1 项新的高相关工作：`VibeAct`，它把振动信号用于接触丰富的反应式灵巧操作控制，主题与灵巧机器人手直接相关，且发布时间晚于上一轮成功运行，因此应作为新增条目收录。整体来看，本轮没有发现大量新文献，但这项工作在触觉感知与灵巧操作闭环控制之间建立了清晰连接，值得继续跟进其后续代码与实机结果。",
       "summary_en": "This run found 1 newly relevant item: `VibeAct`, which uses vibration signals for contact-rich reactive robot dexterity. It is directly aligned with dexterous robot hands and was published after the previous successful run, so it should be added as a new item. No broad wave of new papers appeared in this run, but this work is notable because it connects tactile sensing to closed-loop dexterous manipulation in a concrete way.",
       "item_count": 1
+    },
+    {
+      "date": "2026-06-27",
+      "path": "paper-tracker/reports/2026-06-27.md",
+      "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作工作。检索中虽然能看到一些与触觉、抓握或机器人操作相关的近期信息，但它们要么发布时间早于上一轮已收录内容，要么并未满足“灵巧手/灵巧操作必须是核心贡献”的严格标准，因此本次不新增条目。",
+      "summary_en": "This run did not surface any newly relevant dexterous robot hand or dexterous manipulation work since the previous successful run. Some recent items around tactile sensing, grasping, or robot manipulation appeared in search results, but they were either earlier than already tracked content or did not meet the strict bar that dexterous hands or dexterous manipulation must be central contributions, so no items were added.",
+      "item_count": 0
     }
   ]
 }
