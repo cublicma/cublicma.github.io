@@ -48,6 +48,13 @@
       "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作工作。检索中虽然能看到一些与触觉、抓握或机器人操作相关的近期信息，但它们要么发布时间早于上一轮已收录内容，要么并未满足“灵巧手/灵巧操作必须是核心贡献”的严格标准，因此本次不新增条目。",
       "summary_en": "This run did not surface any newly relevant dexterous robot hand or dexterous manipulation work since the previous successful run. Some recent items around tactile sensing, grasping, or robot manipulation appeared in search results, but they were either earlier than already tracked content or did not meet the strict bar that dexterous hands or dexterous manipulation must be central contributions, so no items were added.",
       "item_count": 0
+    },
+    {
+      "date": "2026-06-28",
+      "path": "paper-tracker/reports/2026-06-28.md",
+      "summary": "本轮发现 1 项新的高相关工作：`Play2Perfect`。它把多指灵巧手的“玩耍式预训练”与精密装配直接连接起来，围绕抓取、手内重定向和位姿到达学习可复用的操作先验，并给出明显的样本效率提升和零样本仿真到真实转移结果，因此值得新增收录。",
+      "summary_en": "This run found 1 newly relevant item: `Play2Perfect`. It directly connects dexterous play pretraining for multi-finger hands to precise assembly, learns reusable manipulation priors for grasping, in-hand reorientation, and pose reaching, and reports strong sample-efficiency gains plus zero-shot sim-to-real transfer, so it should be added.",
+      "item_count": 1
     }
   ]
 }

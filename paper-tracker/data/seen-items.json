@@ -160,5 +160,14 @@
     "primary_url": "https://arxiv.org/abs/2606.27344",
     "reported_in": "paper-tracker/reports/2026-06-26.md",
     "last_seen": "2026-06-26T17:50:56Z"
+  },
+  {
+    "id": "arxiv:2606.26428",
+    "title": "Play2Perfect: What Matters in Dexterous Play Pretraining for Precise Assembly?",
+    "first_public_date": "2026-06-24",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2606.26428",
+    "reported_in": "paper-tracker/reports/2026-06-28.md",
+    "last_seen": "2026-06-28T17:15:10Z"
   }
 ]
