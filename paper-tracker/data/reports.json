@@ -62,6 +62,13 @@
       "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧机器人手/灵巧操作工作，因此不新增条目。检索中出现了一些看似接近的近期论文，但它们要么早于上一轮截止时间，要么灵巧手并非核心贡献，所以被排除。",
       "summary_en": "This run did not find any newly relevant dexterous robot hand or dexterous manipulation work since the last successful run, so no items were added. Some nearby recent papers appeared in search, but they were either published before the previous cutoff or did not make dexterous hands central enough to qualify.",
       "item_count": 0
+    },
+    {
+      "date": "2026-06-30",
+      "path": "paper-tracker/reports/2026-06-30.md",
+      "summary": "本轮继续严格检索灵巧机器人手与灵巧操作方向的最新公开内容，但未发现自上次成功运行以来新增且足够相关的条目，因此不新增收录。检索中看到了若干六月下旬的相关论文与项目，但它们要么早于上一轮截止时间，要么灵巧手并非核心贡献。",
+      "summary_en": "This run continued a strict search for the latest public work on dexterous robot hands and dexterous manipulation, but it did not find any newly relevant item since the last successful run, so nothing was added. Several late-June papers and projects appeared in search, but they were either earlier than the previous cutoff or not central enough on dexterous hands to qualify.",
+      "item_count": 0
     }
   ]
 }
