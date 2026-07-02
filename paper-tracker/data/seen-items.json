@@ -1,5 +1,14 @@
 [
   {
+    "id": "arxiv:2607.01067",
+    "title": "Human-Centric Transferable Tactile Pre-Training for Dexterous Robotic Manipulation",
+    "first_public_date": "2026-07-01",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.01067",
+    "reported_in": "paper-tracker/reports/2026-07-02.md",
+    "last_seen": "2026-07-02T17:51:01Z"
+  },
+  {
     "id": "arxiv:2606.17055",
     "title": "T-Rex: Tactile-Reactive Dexterous Manipulation",
     "first_public_date": "2026-06-15",
