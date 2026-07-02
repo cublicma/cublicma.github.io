@@ -76,6 +76,13 @@
       "summary": "本轮按严格标准检索后，没有发现自上一轮成功运行以来新增且足够相关的灵巧机器人手或灵巧操作条目，因此不新增收录。",
       "summary_en": "After a strict search, this run did not find any newly relevant dexterous robot hand or dexterous manipulation item since the previous successful run, so nothing was added.",
       "item_count": 0
+    },
+    {
+      "date": "2026-07-02",
+      "path": "paper-tracker/reports/2026-07-02.md",
+      "summary": "本轮检索到 1 项新的高相关工作：`Human-Centric Transferable Tactile Pre-Training for Dexterous Robotic Manipulation`。它把人类中心触觉预训练直接用于灵巧机器人操作，公开信息充分，值得新增收录。",
+      "summary_en": "This run found 1 newly relevant item: `Human-Centric Transferable Tactile Pre-Training for Dexterous Robotic Manipulation`. It directly applies human-centric tactile pre-training to dexterous robot manipulation, and the public information is sufficient to add it.",
+      "item_count": 1
     }
   ]
 }
