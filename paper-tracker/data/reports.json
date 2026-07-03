@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-03",
+      "path": "paper-tracker/reports/2026-07-03.md",
+      "summary": "本轮检索到 1 项新的高相关工作：`Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations`。它把想象触觉直接用于接触丰富的灵巧操作，并提供了方法、基准与真实机器人验证，符合本追踪器的严格收录标准。",
+      "summary_en": "This run found 1 newly relevant item: `Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations`. It directly uses imagined tactile representations for contact-rich dexterous manipulation and includes a method, benchmark, and real-robot validation, which fits the tracker’s strict inclusion bar.",
+      "item_count": 1
+    },
+    {
       "date": "2026-06-17",
       "path": "paper-tracker/reports/2026-06-17.md",
       "summary": "本轮未发现自上次成功运行以来新增且足够相关的灵巧手/灵巧操作工作；为避免重复和误报，本次不新增条目。",

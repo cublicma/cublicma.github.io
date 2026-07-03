@@ -1,5 +1,14 @@
 [
   {
+    "id": "arxiv:2607.01684",
+    "title": "Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations",
+    "first_public_date": "2026-07-02",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.01684",
+    "reported_in": "paper-tracker/reports/2026-07-03.md",
+    "last_seen": "2026-07-03T17:28:25Z"
+  },
+  {
     "id": "arxiv:2607.01067",
     "title": "Human-Centric Transferable Tactile Pre-Training for Dexterous Robotic Manipulation",
     "first_public_date": "2026-07-01",
