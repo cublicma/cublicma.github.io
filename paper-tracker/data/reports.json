@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-04",
+      "path": "paper-tracker/reports/2026-07-04.md",
+      "summary": "本轮检索到 1 项新的高相关工作：`VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation`。它把视觉、触觉变形预测与动作预测统一到同一模型中，直接面向接触丰富的灵巧操作，并在 6 个真实任务上报告了明显优于已有方法的结果。",
+      "summary_en": "This run found 1 newly relevant item: `VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation`. It unifies visual prediction, tactile deformation prediction, and action prediction for contact-rich dexterous manipulation, and reports strong gains over prior methods on six real-world tasks.",
+      "item_count": 1
+    },
+    {
       "date": "2026-07-03",
       "path": "paper-tracker/reports/2026-07-03.md",
       "summary": "本轮检索到 1 项新的高相关工作：`Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations`。它把想象触觉直接用于接触丰富的灵巧操作，并提供了方法、基准与真实机器人验证，符合本追踪器的严格收录标准。",
