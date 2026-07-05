@@ -1,5 +1,14 @@
 [
   {
+    "id": "arxiv:2607.01684",
+    "title": "Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations",
+    "first_public_date": "2026-07-02",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.01684",
+    "reported_in": "paper-tracker/reports/2026-07-05.md",
+    "last_seen": "2026-07-05T17:13:58Z"
+  },
+  {
     "id": "arxiv:2607.02503",
     "title": "VT-WAM: Visual-Tactile World Action Model for Contact-Rich Manipulation",
     "first_public_date": "2026-07-02",
