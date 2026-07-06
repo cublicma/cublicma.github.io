@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-06",
+      "path": "paper-tracker/reports/2026-07-06.md",
+      "summary": "本轮没有发现自 2026-07-05 上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作工作。已检查 arXiv、项目页及相关公开页面；一些看似接近的条目要么发布时间早于上一轮截止时间，要么灵巧手并非核心贡献，因此未纳入。",
+      "summary_en": "No newly relevant dexterous robot hand or dexterous manipulation work was found since the last successful run on 2026-07-05. arXiv, project pages, and related public sources were checked; nearby items were excluded because they were either earlier than the previous cutoff or did not make dexterous hands central enough to qualify.",
+      "item_count": 0
+    },
+    {
       "date": "2026-07-05",
       "path": "paper-tracker/reports/2026-07-05.md",
       "summary": "本轮检索到 1 项新的高相关工作：`Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations`。它把“想象触觉”用于接触丰富的灵巧操作，在不依赖真实触觉硬件的前提下，利用视觉和本体感觉生成触觉表征，并在仿真与真实机器人任务上验证了收益。",
