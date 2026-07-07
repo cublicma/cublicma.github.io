@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-07",
+      "path": "paper-tracker/reports/2026-07-07.md",
+      "summary": "本轮检索到 2 项新的高相关工作，均在 2026-07-05 上次成功运行之后公开，并且都把灵巧机器人手或灵巧操作作为核心贡献。优先级最高的是面向五指灵巧手力控抓取与操作的零样本仿真到真实部署工作，其次是以分割掩码作为 sim-to-real 桥接的灵巧世界模型；两者都符合本追踪器的严格收录标准。",
+      "summary_en": "This run found 2 newly relevant items published after the last successful run on 2026-07-05, and both make dexterous robot hands or dexterous manipulation central to the contribution. The top item focuses on zero-shot sim-to-real deployment for five-finger force-based grasping and manipulation, and the second uses segmentation masks as a sim-to-real bridge for a dexterous world model; both meet the tracker’s strict inclusion bar.",
+      "item_count": 2
+    },
+    {
       "date": "2026-07-06",
       "path": "paper-tracker/reports/2026-07-06.md",
       "summary": "本轮没有发现自 2026-07-05 上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作工作。已检查 arXiv、项目页及相关公开页面；一些看似接近的条目要么发布时间早于上一轮截止时间，要么灵巧手并非核心贡献，因此未纳入。",

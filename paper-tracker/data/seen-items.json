@@ -1,5 +1,23 @@
 [
   {
+    "id": "arxiv:2607.04940",
+    "title": "Closing the Reality Gap: Zero-Shot Sim-to-Real Deployment for Dexterous Force-Based Grasping and Manipulation",
+    "first_public_date": "2026-07-05",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.04940",
+    "reported_in": "paper-tracker/reports/2026-07-07.md",
+    "last_seen": "2026-07-07T00:00:00Z"
+  },
+  {
+    "id": "arxiv:2607.04546",
+    "title": "Mask2Real-WM: Dexterous World Model for Precise Control of Robot Hands with 23 DoF",
+    "first_public_date": "2026-07-06",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.04546",
+    "reported_in": "paper-tracker/reports/2026-07-07.md",
+    "last_seen": "2026-07-07T00:00:00Z"
+  },
+  {
     "id": "arxiv:2607.01684",
     "title": "Imagining the Sense of Touch: Touch-Informed Manipulation via Imagined Tactile Representations",
     "first_public_date": "2026-07-02",
