@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-08",
+      "path": "paper-tracker/reports/2026-07-08.md",
+      "summary": "本轮检索到 2 项新的高相关工作，均在 2026-07-07 之后公开，并且都把灵巧机器人手或灵巧操作作为核心贡献。优先级最高的是面向真实灵巧手学习的 `LAMP`，其次是强调双臂灵巧遥操作与力控的 `DexTele-0`；两者都值得继续跟踪代码、项目页和实机结果。",
+      "summary_en": "This run found 2 newly relevant items published after the 2026-07-07 cutoff. The top item is `LAMP`, which focuses on real-world learning for dexterous hand manipulation, and the second is `DexTele-0`, which centers on force-aware bimanual dexterous teleoperation; both are worth tracking for code, project pages, and fuller robot validation.",
+      "item_count": 2
+    },
+    {
       "date": "2026-07-07",
       "path": "paper-tracker/reports/2026-07-07.md",
       "summary": "本轮检索到 2 项新的高相关工作，均在 2026-07-05 上次成功运行之后公开，并且都把灵巧机器人手或灵巧操作作为核心贡献。优先级最高的是面向五指灵巧手力控抓取与操作的零样本仿真到真实部署工作，其次是以分割掩码作为 sim-to-real 桥接的灵巧世界模型；两者都符合本追踪器的严格收录标准。",
