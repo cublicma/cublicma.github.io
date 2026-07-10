@@ -1,5 +1,23 @@
 [
   {
+    "id": "arxiv:2607.08751",
+    "title": "DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation",
+    "first_public_date": "2026-07-10",
+    "type": "benchmark",
+    "primary_url": "https://arxiv.org/abs/2607.08751",
+    "reported_in": "paper-tracker/reports/2026-07-10.md",
+    "last_seen": "2026-07-10T17:49:06Z"
+  },
+  {
+    "id": "arxiv:2607.08341",
+    "title": "AnyDexRT: Calibration-Free Dexterous Hand Retargeting with Few-Shot Human Guidance",
+    "first_public_date": "2026-07-09",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.08341",
+    "reported_in": "paper-tracker/reports/2026-07-10.md",
+    "last_seen": "2026-07-10T17:49:06Z"
+  },
+  {
     "id": "arxiv:2607.06323",
     "title": "LAMP: Latent Motion Prior-Guided Real-World Learning for Dexterous Hand Manipulation",
     "first_public_date": "2026-07-07",
