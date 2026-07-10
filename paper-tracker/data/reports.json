@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-10",
+      "path": "paper-tracker/reports/2026-07-10.md",
+      "summary": "本轮检索到 2 项新的高相关工作，均在 2026-07-09 之后首次公开，并且都把灵巧机器人手或灵巧操作作为核心贡献。优先级最高的是大规模多任务、多具身灵巧操作基准 `DexVerse`，其次是面向多种灵巧手的无标定重定向方法 `AnyDexRT`；两者都值得继续跟踪代码、项目页和更完整的实机验证。",
+      "summary_en": "This run found 2 newly relevant items published after the 2026-07-09 cutoff, and both make dexterous robot hands or dexterous manipulation central to the contribution. The top item is `DexVerse`, a large-scale multi-task, multi-embodiment benchmark, followed by `AnyDexRT`, a calibration-free retargeting method for multiple dexterous hands; both are worth tracking for code, project pages, and fuller real-world validation.",
+      "item_count": 2
+    },
+    {
       "date": "2026-07-09",
       "path": "paper-tracker/reports/2026-07-09.md",
       "summary": "本轮按严格标准检索后，没有发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作条目。我们继续优先检查 arXiv、项目页和相关研究主页，并严格排除了发布时间早于上次截止时间、以及灵巧手并非核心贡献的近似条目。",
