@@ -1,5 +1,14 @@
 [
   {
+    "id": "arxiv:2607.09190",
+    "title": "TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation",
+    "first_public_date": "2026-07-10",
+    "type": "benchmark",
+    "primary_url": "https://arxiv.org/abs/2607.09190",
+    "reported_in": "paper-tracker/reports/2026-07-13.md",
+    "last_seen": "2026-07-13T17:56:53Z"
+  },
+  {
     "id": "arxiv:2607.08751",
     "title": "DexVerse: A Modular Benchmark for Multi-Task, Multi-Embodiment Dexterous Manipulation",
     "first_public_date": "2026-07-10",

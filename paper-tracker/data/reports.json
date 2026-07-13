@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-13",
+      "path": "paper-tracker/reports/2026-07-13.md",
+      "summary": "本轮检索到 1 项新的高相关工作：`TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation`。它把真实世界触觉引导基准、同步多模态数据与触觉驱动迁移框架结合起来，明确以灵巧操作和人类式接触为核心贡献，符合本追踪器的严格收录标准。",
+      "summary_en": "This run found 1 newly relevant item: `TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation`. It combines a real-world tactile-guided benchmark, synchronized multimodal data, and a tactile-driven transfer framework, with dexterous manipulation and human-like contact as the core contribution, which fits the tracker’s strict inclusion bar.",
+      "item_count": 1
+    },
+    {
       "date": "2026-07-12",
       "path": "paper-tracker/reports/2026-07-12.md",
       "summary": "本轮按严格标准检索后，没有发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作条目。我们继续优先检查 arXiv、项目页、实验室与公司研究主页，以及相关代码仓库，并排除了发布时间更早、重复公告或灵巧手并非核心贡献的近似结果。",
