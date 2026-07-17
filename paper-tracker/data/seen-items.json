@@ -1,5 +1,14 @@
 [
   {
+    "id": "arxiv:2607.14487",
+    "title": "MIDAS Hand: Modular low-Impedance Directly-driven Anthropomorphic Sensing Hand",
+    "first_public_date": "2026-07-16",
+    "type": "code",
+    "primary_url": "https://arxiv.org/abs/2607.14487",
+    "reported_in": "paper-tracker/reports/2026-07-17.md",
+    "last_seen": "2026-07-17T00:00:00Z"
+  },
+  {
     "id": "arxiv:2607.09190",
     "title": "TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation",
     "first_public_date": "2026-07-10",
