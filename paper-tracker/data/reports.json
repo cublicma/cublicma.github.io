@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-18",
+      "path": "paper-tracker/reports/2026-07-18.md",
+      "summary": "本轮按严格的新颖性与相关性标准检索后，没有发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作条目。我们继续优先检查 arXiv、项目页、实验室与公司研究主页、代码仓库和相关公开页面，但本次看到的候选项要么发布时间早于 2026-07-17，要么灵巧手/灵巧操作并非核心贡献，因此未纳入。",
+      "summary_en": "After a strict novelty and relevance check, no newly relevant dexterous robot hand or dexterous manipulation item was found since the last successful run. We continued to prioritize arXiv, project pages, lab and company research sites, code repositories, and other public sources, but the candidates seen in this run were either published before 2026-07-17 or did not make dexterous hands or dexterous manipulation central enough to qualify.",
+      "item_count": 0
+    },
+    {
       "date": "2026-07-17",
       "path": "paper-tracker/reports/2026-07-17.md",
       "summary": "本轮按严格时序与相关性筛选后，只发现 1 项真正新增且足够相关的条目：`MIDAS Hand`。它在 2026-07-16 首次公开，是一个低成本、开源、带触觉感知的类人尺度灵巧手，并同时公开了控制、触觉 API、仿真、重定向和遥操作工具链，明显符合“灵巧手是核心贡献”的收录标准。其余看似相关的工作要么早于上次成功运行的时间戳，要么不够满足严格的新颖性条件，因此未纳入。",
