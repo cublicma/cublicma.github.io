@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-22",
+      "path": "paper-tracker/reports/2026-07-22.md",
+      "summary": "本轮按严格的新颖性和相关性标准检索后，没有发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作条目。我们继续检查了 arXiv、公开项目页和相关研究页面，但最近的近邻候选要么首次公开早于 2026-07-21 UTC 的上次运行时间，要么没有把灵巧手/灵巧操作作为核心贡献，因此未纳入。",
+      "summary_en": "After a strict novelty and relevance check, no newly relevant dexterous robot hand or dexterous manipulation item was found since the last successful run. I rechecked arXiv, public project pages, and related research pages, but the nearest candidates were either first public before the prior run timestamp on 2026-07-21 UTC or did not make dexterous hands central enough to qualify.",
+      "item_count": 0
+    },
+    {
       "date": "2026-07-21",
       "path": "paper-tracker/reports/2026-07-21.md",
       "summary": "本轮按严格的新颖性和相关性标准检索后，没有发现自上次成功运行以来新增且足够相关的灵巧机器人手或灵巧操作条目。我们继续检查了 arXiv、公开项目页和相关研究页面，但最近的近邻候选要么首次公开早于 2026-07-20 UTC 的上次运行时间，要么没有把灵巧手/灵巧操作作为核心贡献，因此未纳入。",
