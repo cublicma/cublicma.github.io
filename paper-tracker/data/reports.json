@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-27",
+      "path": "paper-tracker/reports/2026-07-27.md",
+      "summary": "本轮补录了 3 项此前未进入 seen 状态、但与灵巧机器人手或灵巧操作直接相关的新公开工作：`Towards Human-level Dexterous Teleoperation`、`Current as Touch` 和 `A Monolithic Hand with Asymmetric Origami Bending and Dual-chamber Actuators`。其中前两项更偏向灵巧操作控制与触觉/本体感觉闭环，后一项则是强调易制造与被动顺应性的软体灵巧手硬件。整体看，这一轮没有出现大规模新潮，但出现了几个足够扎实且可继续跟踪的增量条目。",
+      "summary_en": "This run adds 3 previously untracked items that are directly relevant to dexterous robot hands or dexterous manipulation: `Towards Human-level Dexterous Teleoperation`, `Current as Touch`, and `A Monolithic Hand with Asymmetric Origami Bending and Dual-chamber Actuators`. The first two focus on dexterous teleoperation and proprioception/tactile-like feedback, while the third is a soft dexterous hand hardware contribution emphasizing manufacturability and passive compliance. There was no large wave of new releases, but these are solid incremental items worth tracking further.",
+      "item_count": 3
+    },
+    {
       "date": "2026-07-26",
       "path": "paper-tracker/reports/2026-07-26.md",
       "summary": "本轮按严格的新颖性和相关性标准复核后，没有发现自上次成功运行以来新增且足够相关的灵巧机器人手、灵巧操作、双手灵巧遥操作或触觉驱动灵巧操作条目。我们继续检查了 arXiv、项目页、实验室与公司研究页面、GitHub 以及相关公开研究信息，但近期近邻候选要么早于上次成功运行时间，要么没有把灵巧手或灵巧操作作为核心贡献，因此本次不新增条目。",

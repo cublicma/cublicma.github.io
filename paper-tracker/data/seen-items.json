@@ -277,5 +277,32 @@
     "primary_url": "https://arxiv.org/abs/2606.26428",
     "reported_in": "paper-tracker/reports/2026-06-28.md",
     "last_seen": "2026-06-28T17:15:10Z"
+  },
+  {
+    "id": "arxiv:2607.11481",
+    "title": "Towards Human-level Dexterous Teleoperation",
+    "first_public_date": "2026-07-13",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.11481",
+    "reported_in": "paper-tracker/reports/2026-07-27.md",
+    "last_seen": "2026-07-27T17:44:37Z"
+  },
+  {
+    "id": "arxiv:2607.03529",
+    "title": "Current as Touch: Proprioceptive Contact Feedback for Compliant Dexterous Manipulation",
+    "first_public_date": "2026-07-03",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.03529",
+    "reported_in": "paper-tracker/reports/2026-07-27.md",
+    "last_seen": "2026-07-27T17:44:37Z"
+  },
+  {
+    "id": "arxiv:2607.22320",
+    "title": "A Monolithic Hand with Asymmetric Origami Bending and Dual-chamber Actuators",
+    "first_public_date": "2026-07-24",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2607.22320",
+    "reported_in": "paper-tracker/reports/2026-07-27.md",
+    "last_seen": "2026-07-27T17:44:37Z"
   }
 ]
