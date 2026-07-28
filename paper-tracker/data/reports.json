@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-28",
+      "path": "paper-tracker/reports/2026-07-28.md",
+      "summary": "本轮检索到 2 项新的高相关工作，均聚焦触觉驱动的接触丰富灵巧操作：`N0-VTLA` 与 `N0-TWAM`。前者统一建模视觉、触觉、语言与动作，并在真实灵巧手任务上取得强结果；后者把触觉作为原生模态来预测未来视觉、触觉和动作，覆盖多具身、多任务基准。整体来看，这一轮新增内容集中在“触觉原生化的灵巧操作基础模型”，而不是单点硬件公告。",
+      "summary_en": "This run found 2 newly relevant items centered on tactile-driven contact-rich dexterous manipulation: `N0-VTLA` and `N0-TWAM`. The former unifies vision, tactile, language, and action and reports strong real-robot dexterous-hand results; the latter treats touch as a native modality for predicting future vision, touch, and action across multi-embodiment, multi-task benchmarks. Overall, the new material is concentrated on tactile-native manipulation foundation models rather than isolated hardware announcements.",
+      "item_count": 2
+    },
+    {
       "date": "2026-07-27",
       "path": "paper-tracker/reports/2026-07-27.md",
       "summary": "本轮补录了 3 项此前未进入 seen 状态、但与灵巧机器人手或灵巧操作直接相关的新公开工作：`Towards Human-level Dexterous Teleoperation`、`Current as Touch` 和 `A Monolithic Hand with Asymmetric Origami Bending and Dual-chamber Actuators`。其中前两项更偏向灵巧操作控制与触觉/本体感觉闭环，后一项则是强调易制造与被动顺应性的软体灵巧手硬件。整体看，这一轮没有出现大规模新潮，但出现了几个足够扎实且可继续跟踪的增量条目。",

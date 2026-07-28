@@ -1,5 +1,23 @@
 [
   {
+    "id": "arxiv:2607.23782",
+    "title": "N0-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens",
+    "first_public_date": "2026-07-25",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/html/2607.23782v1",
+    "reported_in": "paper-tracker/reports/2026-07-28.md",
+    "last_seen": "2026-07-28T17:38:05Z"
+  },
+  {
+    "id": "arxiv:2607.23783",
+    "title": "N0-TWAM: Scaling Tactile-Native World Action Model for Contact-Rich Manipulation",
+    "first_public_date": "2026-07-25",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/html/2607.23783v1",
+    "reported_in": "paper-tracker/reports/2026-07-28.md",
+    "last_seen": "2026-07-28T17:38:05Z"
+  },
+  {
     "id": "arxiv:2607.14487",
     "title": "MIDAS Hand: Modular low-Impedance Directly-driven Anthropomorphic Sensing Hand",
     "first_public_date": "2026-07-16",
