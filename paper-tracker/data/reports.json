@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-29",
+      "path": "paper-tracker/reports/2026-07-29.md",
+      "summary": "本轮只确认到 1 项值得跟踪的重大更新：`InDex` 的 v2 版本继续围绕灵巧手的意图条件化臂-手协调展开，并补充了更明确的方法与机器人验证。整体上，这次检索没有出现大量全新论文潮，但该更新仍然属于与灵巧操作核心直接相关的实质进展。",
+      "summary_en": "This run identified 1 meaningful update worth tracking: the v2 version of `InDex`, which continues to focus on intent-conditioned arm-hand coordination for dexterous hands and adds clearer method detail plus robot validation. Overall, there was no large wave of brand-new papers, but this update still represents a substantive step directly tied to dexterous manipulation.",
+      "item_count": 1
+    },
+    {
       "date": "2026-07-28",
       "path": "paper-tracker/reports/2026-07-28.md",
       "summary": "本轮检索到 2 项新的高相关工作，均聚焦触觉驱动的接触丰富灵巧操作：`N0-VTLA` 与 `N0-TWAM`。前者统一建模视觉、触觉、语言与动作，并在真实灵巧手任务上取得强结果；后者把触觉作为原生模态来预测未来视觉、触觉和动作，覆盖多具身、多任务基准。整体来看，这一轮新增内容集中在“触觉原生化的灵巧操作基础模型”，而不是单点硬件公告。",
