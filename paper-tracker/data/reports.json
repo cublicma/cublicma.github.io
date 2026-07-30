@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-30",
+      "path": "paper-tracker/reports/2026-07-30.md",
+      "summary": "本轮按严格的新颖性和相关性标准复核后，没有找到自上次成功运行以来真正新增且足够相关的灵巧机器人手或灵巧操作条目。近期公开内容里有一些接近候选，但它们要么早于本轮时间窗，要么没有把灵巧手或灵巧操作作为核心贡献，因此本次不新增条目。",
+      "summary_en": "After a strict novelty and relevance check, no genuinely new item since the last successful run met the bar for dexterous robot hands or dexterous manipulation. There were nearby candidates in recent public releases, but they were either outside the current time window or did not make dexterous hands or dexterous manipulation central enough, so no items were added.",
+      "item_count": 0
+    },
+    {
       "date": "2026-07-29",
       "path": "paper-tracker/reports/2026-07-29.md",
       "summary": "本轮只确认到 1 项值得跟踪的重大更新：`InDex` 的 v2 版本继续围绕灵巧手的意图条件化臂-手协调展开，并补充了更明确的方法与机器人验证。整体上，这次检索没有出现大量全新论文潮，但该更新仍然属于与灵巧操作核心直接相关的实质进展。",
