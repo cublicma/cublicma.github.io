@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-07-31",
+      "path": "paper-tracker/reports/2026-07-31.md",
+      "summary": "本轮检索到 1 项新的高相关工作：`UniCross`。它把抓取、重定位、内旋转和内平移统一到同一套灵巧操作表述中，强调跨技能一致性、长程组合和对不同手型的迁移，属于与灵巧机器人手/灵巧操作直接相关的实质新增进展。",
+      "summary_en": "This run found 1 newly relevant item: `UniCross`. It unifies grasping, relocation, in-hand rotation, and in-hand translation under one dexterous-manipulation formulation, emphasizing cross-skill consistency, long-horizon composition, and transfer across hand morphologies, so it is a substantive new item directly tied to dexterous robot hands and dexterous manipulation.",
+      "item_count": 1
+    },
+    {
       "date": "2026-07-30",
       "path": "paper-tracker/reports/2026-07-30.md",
       "summary": "本轮按严格的新颖性和相关性标准复核后，没有找到自上次成功运行以来真正新增且足够相关的灵巧机器人手或灵巧操作条目。近期公开内容里有一些接近候选，但它们要么早于本轮时间窗，要么没有把灵巧手或灵巧操作作为核心贡献，因此本次不新增条目。",
