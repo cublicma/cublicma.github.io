@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-01",
+      "path": "paper-tracker/reports/2026-08-01.md",
+      "summary": "本轮检索到 2 项新的高相关工作：`TacWAM` 与 `FasTac`。前者把机械感知触觉预测纳入世界-动作模型，并在真实接触丰富任务上显著优于视觉和既有多模态基线；后者则面向灵巧操作曲面指尖，统一解决高精度三维形状重建、三轴力估计与高速边缘部署问题，属于灵巧手感知侧的实质新增进展。",
+      "summary_en": "This run found 2 newly relevant items: `TacWAM` and `FasTac`. TacWAM brings mechanics-aware tactile prediction into a world-action model and reports strong gains on real contact-rich tasks over visual and prior multimodal baselines; FasTac targets curved fingertips for dexterous manipulation and jointly addresses high-precision 3D reconstruction, three-axis force estimation, and high-speed edge deployment, so it is a substantive sensing-side addition for dexterous hands.",
+      "item_count": 2
+    },
+    {
       "date": "2026-07-31",
       "path": "paper-tracker/reports/2026-07-31.md",
       "summary": "本轮检索到 1 项新的高相关工作：`UniCross`。它把抓取、重定位、内旋转和内平移统一到同一套灵巧操作表述中，强调跨技能一致性、长程组合和对不同手型的迁移，属于与灵巧机器人手/灵巧操作直接相关的实质新增进展。",
