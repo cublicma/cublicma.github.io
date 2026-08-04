@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-04",
+      "path": "paper-tracker/reports/2026-08-04.md",
+      "summary": "本轮检索到 1 项新的高相关工作：`MANGO-Grasp`。它把跨具身灵巧抓取作为核心问题，结合几何导向的 3D Gaussian 原语与带形态-运动学信息的机器人描述，在已见与未见手型上都报告了有说服力的仿真和真实实验结果，因此属于本次明确新增条目。",
+      "summary_en": "This run found 1 newly relevant item: `MANGO-Grasp`. It targets cross-embodiment dexterous grasping as the central problem and combines geometry-oriented 3D Gaussian primitives with morpho-kinematic robot descriptors, reporting convincing simulation and real-world results on both seen and unseen hand embodiments, so it is a clear new addition for this run.",
+      "item_count": 1
+    },
+    {
       "date": "2026-08-03",
       "path": "paper-tracker/reports/2026-08-03.md",
       "summary": "本轮按严格的新颖性和相关性标准复核后，没有发现自上次成功运行以来真正新增且足够相关的灵巧机器人手或灵巧操作条目。虽然检索到一些最近公开的灵巧遥操作与灵巧操作近邻工作，但它们要么早已进入已见状态，要么不满足“灵巧手/灵巧操作是核心贡献”的收录门槛，因此本次不新增条目。",

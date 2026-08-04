@@ -1,5 +1,14 @@
 [
   {
+    "id": "arxiv:2608.02014",
+    "title": "MANGO-Grasp: Mahalanobis Fields over Geometry-Oriented 3D Gaussians for Cross-Embodiment Dexterous Grasping",
+    "first_public_date": "2026-08-03",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2608.02014",
+    "reported_in": "paper-tracker/reports/2026-08-04.md",
+    "last_seen": "2026-08-04T17:50:12Z"
+  },
+  {
     "id": "arxiv:2607.28391",
     "title": "TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile Prediction",
     "first_public_date": "2026-07-30",
