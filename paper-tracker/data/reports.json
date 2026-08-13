@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-13",
+      "path": "paper-tracker/reports/2026-08-13.md",
+      "summary": "本轮检索到两项与灵巧机器人手直接相关的新公开工作：其一是面向人手到多种机器人灵巧手/手臂形态编辑的 HandEdit 基准，其二是关于类人双臂灵巧操作中初始姿态依赖与手选择偏差的诊断研究。两者都在 2026-08-12 首次公开，且都把“手”作为核心变量，因此纳入本次更新。",
+      "summary_en": "This run found two newly public works directly related to dexterous robot hands: HandEdit, a benchmark for editing egocentric human-hand imagery into multiple robotic hand and hand-arm embodiments, and a study diagnosing initial-pose-dependent hand-selection bias in humanoid dual-arm dexterous manipulation. Both were first public on 2026-08-12 and both place the hand as a central variable, so they are included in this update.",
+      "item_count": 2
+    },
+    {
       "date": "2026-08-12",
       "path": "paper-tracker/reports/2026-08-12.md",
       "summary": "本轮按严格的新颖性与相关性标准复查了 arXiv、公开项目页、实验室与公司研究页面、GitHub 及相关研究信息后，没有发现 2026-08-10 之后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前可见的近邻结果要么早于本轮时间窗，要么没有达到“灵巧手是主线贡献”的收录门槛，因此本次不新增项目。",
