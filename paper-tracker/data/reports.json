@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-14",
+      "path": "paper-tracker/reports/2026-08-14.md",
+      "summary": "本轮检索到 1 项新的高相关工作：`NestDex`。它把灵巧操作拆成可复用的内层手技能与由视觉语言模块驱动的外层技能选择，核心仍然是多指灵巧手的真实遥操作与任务执行，因此纳入本次更新。",
+      "summary_en": "This run found 1 newly public, highly relevant work: `NestDex`. It decomposes dexterous manipulation into reusable inner hand skills plus a vision-language-driven outer skill selector, and the core contribution remains real teleoperated dexterous hand execution, so it is included in this update.",
+      "item_count": 1
+    },
+    {
       "date": "2026-08-13",
       "path": "paper-tracker/reports/2026-08-13.md",
       "summary": "本轮检索到两项与灵巧机器人手直接相关的新公开工作：其一是面向人手到多种机器人灵巧手/手臂形态编辑的 HandEdit 基准，其二是关于类人双臂灵巧操作中初始姿态依赖与手选择偏差的诊断研究。两者都在 2026-08-12 首次公开，且都把“手”作为核心变量，因此纳入本次更新。",
