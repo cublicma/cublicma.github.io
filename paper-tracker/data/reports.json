@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-15",
+      "path": "paper-tracker/reports/2026-08-15.md",
+      "summary": "本轮增量复查了 arXiv 及相关项目/研究页面，没有找到自上一轮成功运行后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。近邻结果要么已在前几轮收录，要么不够手中心，因此本次不新增项目。",
+      "summary_en": "This incremental pass reviewed arXiv and related project/research pages, but no newly public item since the last successful run met the bar for making dexterous robot hands or dexterous manipulation a central contribution. Nearby candidates were either already tracked or not hand-centric enough, so no new items are added.",
+      "item_count": 0
+    },
+    {
       "date": "2026-08-14",
       "path": "paper-tracker/reports/2026-08-14.md",
       "summary": "本轮检索到 1 项新的高相关工作：`NestDex`。它把灵巧操作拆成可复用的内层手技能与由视觉语言模块驱动的外层技能选择，核心仍然是多指灵巧手的真实遥操作与任务执行，因此纳入本次更新。",
