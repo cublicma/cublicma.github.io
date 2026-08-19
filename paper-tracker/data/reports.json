@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-19",
+      "path": "paper-tracker/reports/2026-08-19.md",
+      "summary": "本轮增量检索仅发现 1 项真正新增且高相关的工作：`Physics-Informed Sliding-Window Particle Filtering for Tactile-Only In-Hand 6-DoF Object Pose Refinement`。它于 2026-08-18 首次公开，聚焦仅依赖触觉的手内物体位姿精修，是典型的灵巧手与在手操作问题，因此纳入本次更新。",
+      "summary_en": "This incremental pass found only 1 truly new and highly relevant item: `Physics-Informed Sliding-Window Particle Filtering for Tactile-Only In-Hand 6-DoF Object Pose Refinement`. First public on 2026-08-18, it focuses on tactile-only in-hand object pose refinement, which is a classic dexterous-hand and in-hand manipulation problem, so it is included in this update.",
+      "item_count": 1
+    },
+    {
       "date": "2026-08-18",
       "path": "paper-tracker/reports/2026-08-18.md",
       "summary": "本轮增量检索发现 2 项新近公开且相关性较高的工作，均在 2026-08-17 首次公开。ViHaTeleop 聚焦低成本视触觉遥操作，用于采集灵巧操作示教并验证触觉反馈对接触关键任务的帮助；H-PAC Hand 聚焦欠驱动灵巧手的控制建模与腱弹性补偿，直接改善手部姿态可重复性。两者都把灵巧手或灵巧操作作为核心贡献，纳入本次更新。",
