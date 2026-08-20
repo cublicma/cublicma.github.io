@@ -1,5 +1,23 @@
 [
   {
+    "id": "arxiv:2608.19182",
+    "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
+    "first_public_date": "2026-08-19",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2608.19182",
+    "reported_in": "paper-tracker/reports/2026-08-20.md",
+    "last_seen": "2026-08-20T16:36:53Z"
+  },
+  {
+    "id": "arxiv:2608.18618",
+    "title": "LabDex: A Hierarchical Benchmark for Dexterous Manipulation in Laboratories",
+    "first_public_date": "2026-08-19",
+    "type": "benchmark",
+    "primary_url": "https://arxiv.org/abs/2608.18618",
+    "reported_in": "paper-tracker/reports/2026-08-20.md",
+    "last_seen": "2026-08-20T16:36:53Z"
+  },
+  {
     "id": "arxiv:2608.17601",
     "title": "Physics-Informed Sliding-Window Particle Filtering for Tactile-Only In-Hand 6-DoF Object Pose Refinement",
     "first_public_date": "2026-08-18",

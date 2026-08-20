@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-20",
+      "path": "paper-tracker/reports/2026-08-20.md",
+      "summary": "本轮增量检索收录 2 项 2026-08-19 首次公开且高度相关的新工作：`ADEPT` 聚焦用大规模强化学习把预训练和后训练结合起来，推动多自由度灵巧手在视触觉输入下完成长时序任务；`LabDex` 则提出面向化学实验室的层级式灵巧操作基准与数据集，强调真实实验室交互、长时程流程和跨平台评测。两者都把灵巧手或灵巧操作放在主线位置，因此纳入本次更新。",
+      "summary_en": "This incremental pass adds 2 newly public and highly relevant items first released on 2026-08-19. `ADEPT` proposes a large-scale RL framework that combines pre-training and post-training to advance high-DoF dexterous manipulation from raw visuo-tactile input, while `LabDex` introduces a hierarchical benchmark and dataset for dexterous manipulation in chemistry laboratories with real-world lab interaction and long-horizon evaluation. Both place dexterous hands or dexterous manipulation at the center, so they are included in this update.",
+      "item_count": 2
+    },
+    {
       "date": "2026-08-19",
       "path": "paper-tracker/reports/2026-08-19.md",
       "summary": "本轮增量检索仅发现 1 项真正新增且高相关的工作：`Physics-Informed Sliding-Window Particle Filtering for Tactile-Only In-Hand 6-DoF Object Pose Refinement`。它于 2026-08-18 首次公开，聚焦仅依赖触觉的手内物体位姿精修，是典型的灵巧手与在手操作问题，因此纳入本次更新。",
