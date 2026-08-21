@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-21",
+      "path": "paper-tracker/reports/2026-08-21.md",
+      "summary": "本轮按增量规则复查了 arXiv、项目页、研究主页与公开代码仓库，未发现自上一轮成功运行后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前可见近邻结果要么早于本次窗口，要么更偏通用操控或维护性更新，因此本次不新增项目。",
+      "summary_en": "This incremental pass rechecked arXiv, project pages, research homepages, and public code repositories, but found no newly public item since the last successful run that made dexterous robot hands or dexterous manipulation a central contribution. The nearby results visible in this window were either earlier than the cutoff or leaned toward generic manipulation or maintenance updates, so no new items are added.",
+      "item_count": 0
+    },
+    {
       "date": "2026-08-20",
       "path": "paper-tracker/reports/2026-08-20.md",
       "summary": "本轮增量检索收录 2 项 2026-08-19 首次公开且高度相关的新工作：`ADEPT` 聚焦用大规模强化学习把预训练和后训练结合起来，推动多自由度灵巧手在视触觉输入下完成长时序任务；`LabDex` 则提出面向化学实验室的层级式灵巧操作基准与数据集，强调真实实验室交互、长时程流程和跨平台评测。两者都把灵巧手或灵巧操作放在主线位置，因此纳入本次更新。",
