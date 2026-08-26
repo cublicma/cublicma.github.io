@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-26",
+      "path": "paper-tracker/reports/2026-08-26.md",
+      "summary": "本轮检索到 2 项 2026-08-25 首次公开且与灵巧手/灵巧操作高度相关的新工作：一项是用于高保真灵巧操作捕捉的光纤传感手套，另一项是面向机器人灵巧操作的耐久型视觉触觉指尖。两者都把手部感知或手部捕捉放在主线位置，因此纳入本次更新。",
+      "summary_en": "This run found 2 newly public items from 2026-08-25 that are highly relevant to dexterous hands and dexterous manipulation: a fiber-optic sensing glove for high-fidelity manipulation capture and a durable vision-based tactile fingertip for robotic manipulation. Both place hand sensing or hand capture at the center, so they are included in this update.",
+      "item_count": 2
+    },
+    {
       "date": "2026-08-25",
       "path": "paper-tracker/reports/2026-08-25.md",
       "summary": "本轮按增量规则复查了 arXiv、项目页、实验室与公司研究主页、GitHub 以及相关公开页面，没有发现自上一轮成功运行后首次公开、且把灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前时间窗内能看到的近邻结果要么早于本次截止时间，要么更偏通用操控或维护性更新，因此本次不新增项目。",

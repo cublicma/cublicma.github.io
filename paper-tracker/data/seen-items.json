@@ -1,5 +1,23 @@
 [
   {
+    "id": "arxiv:2608.24572",
+    "title": "Fiber Optic Sensing Glove for High Performance Dexterous Manipulation Capture",
+    "first_public_date": "2026-08-25",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2608.24572",
+    "reported_in": "paper-tracker/reports/2026-08-26.md",
+    "last_seen": "2026-08-26T00:00:00Z"
+  },
+  {
+    "id": "arxiv:2608.24242",
+    "title": "A Durable Vision-Based Tactile Fingertip for Robotic Manipulation",
+    "first_public_date": "2026-08-25",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2608.24242",
+    "reported_in": "paper-tracker/reports/2026-08-26.md",
+    "last_seen": "2026-08-26T00:00:00Z"
+  },
+  {
     "id": "arxiv:2608.19182",
     "title": "ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning",
     "first_public_date": "2026-08-19",
