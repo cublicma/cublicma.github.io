@@ -1,5 +1,14 @@
 [
   {
+    "id": "arxiv:2608.25547",
+    "title": "A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception for Dexterous Manipulation",
+    "first_public_date": "2026-08-26",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2608.25547",
+    "reported_in": "paper-tracker/reports/2026-08-28.md",
+    "last_seen": "2026-08-28T00:00:00Z"
+  },
+  {
     "id": "arxiv:2608.24572",
     "title": "Fiber Optic Sensing Glove for High Performance Dexterous Manipulation Capture",
     "first_public_date": "2026-08-25",

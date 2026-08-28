@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-28",
+      "path": "paper-tracker/reports/2026-08-28.md",
+      "summary": "本轮检索到 1 项 2026-08-26 首次公开且与灵巧手高度相关的新工作：一款五指腱驱动灵巧手，结合分布式双模态触觉感知，直接围绕灵巧操作本体设计。由于它给出了实体手实验和接受信息，因此纳入本次更新。",
+      "summary_en": "This run found 1 newly public item from 2026-08-26 that is highly relevant to dexterous hands: a tendon-driven five-fingered hand with distributed dual-modality tactile perception, centered directly on dexterous-hand design. It includes physical manipulation experiments and acceptance information, so it is included in this update.",
+      "item_count": 1
+    },
+    {
       "date": "2026-08-26",
       "path": "paper-tracker/reports/2026-08-26.md",
       "summary": "本轮检索到 2 项 2026-08-25 首次公开且与灵巧手/灵巧操作高度相关的新工作：一项是用于高保真灵巧操作捕捉的光纤传感手套，另一项是面向机器人灵巧操作的耐久型视觉触觉指尖。两者都把手部感知或手部捕捉放在主线位置，因此纳入本次更新。",
