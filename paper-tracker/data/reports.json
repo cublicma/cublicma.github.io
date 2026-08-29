@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-08-29",
+      "path": "paper-tracker/reports/2026-08-29.md",
+      "summary": "本轮按增量规则复查了 arXiv、项目页、研究主页、GitHub 及相关公开信息，没有发现自上一轮成功运行后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前可见近邻结果要么早于本次时间窗，要么更偏通用操控或维护性更新，因此本次不新增项目。",
+      "summary_en": "This incremental pass rechecked arXiv, project pages, research homepages, GitHub, and related public sources, but found no newly public item since the last successful run that made dexterous robot hands or dexterous manipulation a central contribution. Nearby results visible in this window were either earlier than the cutoff or leaned toward generic manipulation or maintenance updates, so no new items are added.",
+      "item_count": 0
+    },
+    {
       "date": "2026-08-28",
       "path": "paper-tracker/reports/2026-08-28.md",
       "summary": "本轮检索到 1 项 2026-08-26 首次公开且与灵巧手高度相关的新工作：一款五指腱驱动灵巧手，结合分布式双模态触觉感知，直接围绕灵巧操作本体设计。由于它给出了实体手实验和接受信息，因此纳入本次更新。",
