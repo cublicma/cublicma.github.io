@@ -1,5 +1,23 @@
 [
   {
+    "id": "arxiv:2609.00555",
+    "title": "Potential-Guided Particle Steering for Negation-Constrained Dexterous Grasping",
+    "first_public_date": "2026-09-01",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2609.00555",
+    "reported_in": "paper-tracker/reports/2026-09-02.md",
+    "last_seen": "2026-09-02T19:16:41Z"
+  },
+  {
+    "id": "arxiv:2609.01596",
+    "title": "Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation",
+    "first_public_date": "2026-09-01",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2609.01596",
+    "reported_in": "paper-tracker/reports/2026-09-02.md",
+    "last_seen": "2026-09-02T19:16:41Z"
+  },
+  {
     "id": "arxiv:2608.25547",
     "title": "A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception for Dexterous Manipulation",
     "first_public_date": "2026-08-26",
