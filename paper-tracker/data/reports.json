@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-09-02",
+      "path": "paper-tracker/reports/2026-09-02.md",
+      "summary": "本轮增量检索新增 2 项高相关工作，均于 2026-09-01 首次公开。其一是 `Potential-Guided Particle Steering for Negation-Constrained Dexterous Grasping`，针对“抓住目标但避开禁抓区域”的灵巧抓取约束，补上了现有语言驱动抓取在否定指令上的明显缺口。其二是 `Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation`，面向亚毫米级接触丰富装配，强调接触结果建模、力矩-动作联合表示和真实系统适配。两项都把灵巧抓取或高精度接触操作放在主线位置，因此纳入本次更新。",
+      "summary_en": "This incremental pass adds 2 newly public items from 2026-09-01. `Potential-Guided Particle Steering for Negation-Constrained Dexterous Grasping` targets language-driven dexterous grasping with explicit avoid constraints, filling a clear gap in negation handling. `Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation` focuses on sub-millimeter, contact-rich assembly by modeling contact consequences and adapting to real robot dynamics. Both place dexterous grasping or precision contact manipulation at the center, so they are included in this update.",
+      "item_count": 2
+    },
+    {
       "date": "2026-09-01",
       "path": "paper-tracker/reports/2026-09-01.md",
       "summary": "本轮按增量规则复查了 arXiv、项目页、研究主页、GitHub 及相关公开信息，没有发现自上一轮成功运行后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前可见的近邻结果要么早于本次时间窗，要么更偏通用操控或维护性更新，因此本次不新增项目。",
