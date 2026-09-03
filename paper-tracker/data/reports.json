@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-09-03",
+      "path": "paper-tracker/reports/2026-09-03.md",
+      "summary": "本轮增量检索新增 1 项高相关工作，均于 2026-09-01 首次公开。`Does Imitation Learning Preserve Temporal Robustness in Dexterous Manipulation?` 直接研究模仿学习在灵巧操作中的时间鲁棒性，并提出 ParcelStow 基准来评测时序稳定性，因此纳入本次更新。相较上一轮，没有发现第二项同样独立且足够高相关的新工作。",
+      "summary_en": "This incremental pass adds 1 newly public, highly relevant item from 2026-09-01. `Does Imitation Learning Preserve Temporal Robustness in Dexterous Manipulation?` studies temporal robustness in dexterous manipulation under imitation learning and introduces the ParcelStow benchmark, so it is included in this update. Compared with the previous run, no second item met the novelty and relevance bar.",
+      "item_count": 1
+    },
+    {
       "date": "2026-09-02",
       "path": "paper-tracker/reports/2026-09-02.md",
       "summary": "本轮增量检索新增 2 项高相关工作，均于 2026-09-01 首次公开。其一是 `Potential-Guided Particle Steering for Negation-Constrained Dexterous Grasping`，针对“抓住目标但避开禁抓区域”的灵巧抓取约束，补上了现有语言驱动抓取在否定指令上的明显缺口。其二是 `Facet-0: A Robotic Foundation Model for Contact-Rich Precise Manipulation`，面向亚毫米级接触丰富装配，强调接触结果建模、力矩-动作联合表示和真实系统适配。两项都把灵巧抓取或高精度接触操作放在主线位置，因此纳入本次更新。",
