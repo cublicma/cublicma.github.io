@@ -1,0 +1,30 @@
+{
+  "run_utc": "2026-09-03T19:10:18Z",
+  "report_path": "paper-tracker/reports/2026-09-03.md",
+  "summary": "本轮增量检索新增 1 项高相关工作，均于 2026-09-01 首次公开。`Does Imitation Learning Preserve Temporal Robustness in Dexterous Manipulation?` 直接研究模仿学习在灵巧操作中的时间鲁棒性，并提出 ParcelStow 基准来评测时序稳定性，因此纳入本次更新。相较上一轮，没有发现第二项同样独立且足够高相关的新工作。",
+  "summary_en": "This incremental pass adds 1 newly public, highly relevant item from 2026-09-01. `Does Imitation Learning Preserve Temporal Robustness in Dexterous Manipulation?` studies temporal robustness in dexterous manipulation under imitation learning and introduces the ParcelStow benchmark, so it is included in this update. Compared with the previous run, no second item met the novelty and relevance bar.",
+  "items": [
+    {
+      "id": "arxiv:2609.01453",
+      "title": "Does Imitation Learning Preserve Temporal Robustness in Dexterous Manipulation?",
+      "first_public_date": "2026-09-01",
+      "authors_or_org": "Yutong Wang, Yuchen Cheng, Yao Qiao, Zhenjia Xu",
+      "type": "paper",
+      "relevance": "这项工作直接研究灵巧操作中的模仿学习与时间鲁棒性，并提出专门基准 ParcelStow，核心关注点是灵巧手在时序扰动下的稳定执行，而不是通用机械臂操控。",
+      "relevance_en": "This work directly studies imitation learning and temporal robustness in dexterous manipulation, and introduces the dedicated ParcelStow benchmark. Its core concern is stable dexterous execution under temporal perturbation rather than generic arm manipulation.",
+      "novelty_signal": "提出 ParcelStow 基准与对应评测流程，把时间稳定性作为灵巧操作的新评测维度，并公开代码、数据和文档。",
+      "novelty_signal_en": "Introduces the ParcelStow benchmark and evaluation pipeline, making temporal stability a new axis for dexterous-manipulation evaluation, with code, data, and documentation linked publicly.",
+      "analysis_zh": "这篇工作的主要工作是检验并量化模仿学习在灵巧操作中的时间鲁棒性是否能够被保留，同时提出 ParcelStow 作为新的基准来专门测量这一点。它解决的问题不是一般性的“能不能抓起来”，而是灵巧手在时序扰动、动作延迟或节拍变化下能否仍维持稳定、可复现的操作表现。方法上，公开信息显示作者围绕 ParcelStow 设计了基准与评测流程，并结合通用模仿学习策略比较 temporal robustness；仓库还提供了代码、数据与在线文档，说明工作不仅停留在论文层面。实验上，摘要明确指出该基准用于评测桌面场景中的包裹投放/收纳类灵巧操作，并把 temporal robustness 作为核心指标；但公开摘要并未披露完整的定量结果、具体机器人平台或全部对比对象。总体来看，这项工作把“时间稳定性”这一常被忽视的维度带回灵巧操作评测主线，适合作为后续研究和复现实验的公共入口。限制是当前可公开获取的信息仍不足以判断其在更复杂接触策略、不同手型或更长时程任务上的泛化边界。",
+      "analysis_en": "The main contribution is a study of whether imitation learning preserves temporal robustness in dexterous manipulation, together with `ParcelStow` as a benchmark that makes timing stability a first-class evaluation target. The problem is not simple pick-and-place success, but whether a dexterous hand remains stable and repeatable under temporal perturbations such as delay, phase shifts, or altered action cadence. Public information suggests that the authors built the benchmark and evaluation pipeline around `ParcelStow` and compared temporal robustness across imitation-learning approaches; the linked repository also exposes code, data, and documentation, which indicates this is more than a paper-only result. The experiments are described in the abstract as focusing on parcel stowing in desktop settings and measuring temporal robustness explicitly, but the public abstract does not disclose the full numerical results, the exact robot platform, or all baselines. Overall, the work brings temporal stability back into the center of dexterous-manipulation evaluation and should be useful as a shared entry point for follow-up research and replication. A limitation is that the currently public material is still insufficient to judge how far the approach transfers to more complex contact strategies, different hand embodiments, or longer-horizon tasks.",
+      "links": [
+        "https://arxiv.org/abs/2609.01453"
+      ],
+      "confidence": 0.86
+    }
+  ],
+  "caveats": [
+    "本轮按既有 seen-items 状态做增量去重。",
+    "检索范围覆盖 arXiv、会议与期刊网站、实验室与大学页面、公司研究博客、GitHub、项目页和 Hugging Face。",
+    "本轮新增条目均为 2026-09-01 首次公开，且灵巧操作的时间鲁棒性是核心贡献之一。"
+  ]
+}
