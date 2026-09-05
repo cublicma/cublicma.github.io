@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-09-05",
+      "path": "paper-tracker/reports/2026-09-05.md",
+      "summary": "本轮增量检索复查了 arXiv 近期提交、相关项目页与公开研究页面，没有发现自上次成功运行后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前可见结果里有一些近邻主题，但它们要么更偏通用机器人操控，要么还不足以满足“手是主线贡献”的收录门槛，因此本次不新增项目。",
+      "summary_en": "This incremental pass rechecked recent arXiv submissions, related project pages, and public research pages, but found no newly public item since the last successful run that made dexterous robot hands or dexterous manipulation a central contribution. Some nearby results were visible, but they were either more aligned with generic robot manipulation or not hand-centric enough to meet the inclusion bar, so no items are added in this run.",
+      "item_count": 0
+    },
+    {
       "date": "2026-09-03",
       "path": "paper-tracker/reports/2026-09-03.md",
       "summary": "本轮增量检索新增 1 项高相关工作，均于 2026-09-01 首次公开。`Does Imitation Learning Preserve Temporal Robustness in Dexterous Manipulation?` 直接研究模仿学习在灵巧操作中的时间鲁棒性，并提出 ParcelStow 基准来评测时序稳定性，因此纳入本次更新。相较上一轮，没有发现第二项同样独立且足够高相关的新工作。",
