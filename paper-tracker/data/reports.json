@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-09-06",
+      "path": "paper-tracker/reports/2026-09-06.md",
+      "summary": "本轮增量检索发现 2 项自上次成功运行后首次公开且足够相关的新工作。`Aero Hand Open` 是面向灵巧手研究的开源平台发布，直接服务于多指灵巧操作实验与复现；`RoboTok` 则把互联网规模的人类手轨迹检索和参考视频提示结合起来，为灵巧操作策略学习提供可扩展的数据引擎。两项都把灵巧手或灵巧操作放在主线位置，因此纳入本次更新。",
+      "summary_en": "This incremental pass found 2 newly public items that were relevant enough since the last successful run. `Aero Hand Open` is an open platform release for dexterous-hand research, directly supporting multi-finger manipulation experiments and reproduction; `RoboTok` combines internet-scale human hand-trajectory retrieval with reference-video prompting as a scalable data engine for dexterous policy learning. Both place dexterous hands or dexterous manipulation at the center, so they are included in this update.",
+      "item_count": 2
+    },
+    {
       "date": "2026-09-05",
       "path": "paper-tracker/reports/2026-09-05.md",
       "summary": "本轮增量检索复查了 arXiv 近期提交、相关项目页与公开研究页面，没有发现自上次成功运行后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前可见结果里有一些近邻主题，但它们要么更偏通用机器人操控，要么还不足以满足“手是主线贡献”的收录门槛，因此本次不新增项目。",
