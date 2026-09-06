@@ -1,5 +1,23 @@
 [
   {
+    "id": "arxiv:2608.28578",
+    "title": "Aero Hand Open",
+    "first_public_date": "2026-08-31",
+    "type": "project",
+    "primary_url": "https://arxiv.org/abs/2608.28578",
+    "reported_in": "paper-tracker/reports/2026-09-06.md",
+    "last_seen": "2026-09-06T00:00:00Z"
+  },
+  {
+    "id": "arxiv:2609.03199",
+    "title": "RoboTok: Internet-scale retrieval engine for human hand trajectories with video prompting to advance dexterous robot manipulation",
+    "first_public_date": "2026-09-03",
+    "type": "paper",
+    "primary_url": "https://arxiv.org/abs/2609.03199",
+    "reported_in": "paper-tracker/reports/2026-09-06.md",
+    "last_seen": "2026-09-06T00:00:00Z"
+  },
+  {
     "id": "arxiv:2609.01453",
     "title": "Does Imitation Learning Preserve Temporal Robustness in Dexterous Manipulation?",
     "first_public_date": "2026-09-01",
