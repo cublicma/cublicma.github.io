@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-09-08",
+      "path": "paper-tracker/reports/2026-09-08.md",
+      "summary": "本轮按增量规则复查了 arXiv、会议与期刊网站、实验室与大学页面、公司研究博客、GitHub、项目页和 Hugging Face 相关公开信息，没有发现自上次成功运行后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前窗口里能看到的少数近邻结果要么早于本次时间窗，要么更偏通用操控或维护性更新，因此本次不新增项目。",
+      "summary_en": "This incremental pass rechecked arXiv, conference and journal sites, lab and university pages, company research blogs, GitHub, project pages, and relevant Hugging Face sources, but found no newly public item since the last successful run that made dexterous robot hands or dexterous manipulation a central contribution. The few nearby results visible in this window were either earlier than the cutoff or leaned toward generic manipulation or maintenance updates, so no items are added in this run.",
+      "item_count": 0
+    },
+    {
       "date": "2026-09-06",
       "path": "paper-tracker/reports/2026-09-06.md",
       "summary": "本轮增量检索发现 2 项自上次成功运行后首次公开且足够相关的新工作。`Aero Hand Open` 是面向灵巧手研究的开源平台发布，直接服务于多指灵巧操作实验与复现；`RoboTok` 则把互联网规模的人类手轨迹检索和参考视频提示结合起来，为灵巧操作策略学习提供可扩展的数据引擎。两项都把灵巧手或灵巧操作放在主线位置，因此纳入本次更新。",
