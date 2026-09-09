@@ -1,6 +1,13 @@
 {
   "reports": [
     {
+      "date": "2026-09-09",
+      "path": "paper-tracker/reports/2026-09-09.md",
+      "summary": "本轮增量检索发现 1 项自上次成功运行后首次公开且足够相关的新工作：`Dex-X`。它把人类视频、仿真中的接触补全和可部署的视触觉灵巧操作策略连接起来，直接面向多指灵巧手与手臂平台上的抓取和接触丰富工具使用，因此符合本追踪器的核心范围。",
+      "summary_en": "This incremental pass found 1 newly public and sufficiently relevant item since the last successful run: `Dex-X`. It connects human videos, simulated contact completion, and deployable visual-tactile dexterous manipulation policies, directly targeting multi-finger hand-arm platforms for grasping and contact-rich tool use, so it fits the tracker’s core scope.",
+      "item_count": 1
+    },
+    {
       "date": "2026-09-08",
       "path": "paper-tracker/reports/2026-09-08.md",
       "summary": "本轮按增量规则复查了 arXiv、会议与期刊网站、实验室与大学页面、公司研究博客、GitHub、项目页和 Hugging Face 相关公开信息，没有发现自上次成功运行后首次公开、且将灵巧机器人手或灵巧操作作为核心贡献的新增条目。当前窗口里能看到的少数近邻结果要么早于本次时间窗，要么更偏通用操控或维护性更新，因此本次不新增项目。",
